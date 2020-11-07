@@ -1,0 +1,2473 @@
+%!PS-Adobe-3.0
+%%Creator: draw.c (PSLib)
+%%Creation-Date: 23/03/04 11:39 AM
+%%Title: Drawing Examples
+%%Author: Uwe Steinmann
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 596 842
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+%%BeginResource: definicoes
+%%EndResource
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N
+/p{show}N/w{0 rmoveto}B/a{moveto}B/l{lineto}B/qs{currentpoint
+currentpoint newpath moveto 3 2 roll dup true charpath stroke
+stringwidth pop 3 2 roll add exch moveto}B/qf{currentpoint
+currentpoint newpath moveto 3 2 roll dup true charpath fill
+stringwidth pop 3 2 roll add exch moveto}B/qsf{currentpoint
+currentpoint newpath moveto 3 2 roll dup true charpath gsave stroke grestore fill
+stringwidth pop 3 2 roll add exch moveto}B/qc{currentpoint
+currentpoint newpath moveto 3 2 roll dup true charpath clip
+stringwidth pop 3 2 roll add exch moveto}B/qsc{currentpoint
+currentpoint initclip newpath moveto 3 2 roll dup true charpath clip stroke
+stringwidth pop 3 2 roll add exch moveto}B/qfc{currentpoint
+currentpoint initclip newpath moveto 3 2 roll dup true charpath clip fill
+stringwidth pop 3 2 roll add exch moveto}B/qfsc{currentpoint
+currentpoint initclip newpath moveto 3 2 roll dup true charpath gsave stroke grestore clip fill
+stringwidth pop 3 2 roll add exch moveto}B/qi{currentpoint
+3 2 roll
+stringwidth pop 3 2 roll add exch moveto}B/tr{currentpoint currentpoint 5 4 roll add moveto}B/rt{moveto}B/#copies{1}B
+
+/reencdict 12 dict def /ReEncode { reencdict begin
+/newcodesandnames exch def /newfontname exch def /basefontname exch def
+/basefontdict basefontname findfont def /newfont basefontdict maxlength dict def
+basefontdict { exch dup /FID ne { dup /Encoding eq
+{ exch dup length array copy newfont 3 1 roll put }
+{ exch newfont 3 1 roll put } ifelse } { pop pop } ifelse } forall
+newfont /FontName newfontname put newcodesandnames aload pop
+128 1 255 { newfont /Encoding get exch /.notdef put } for
+newcodesandnames length 2 idiv { newfont /Encoding get 3 1 roll put } repeat
+newfontname newfont definefont pop end } def
+/fontenc-TeXBase1 [
+8#001 /dotaccent 8#002 /fi 8#003 /fl 8#004 /fraction 8#005 /hungarumlaut 8#006 /Lslash 8#007 /lslash 
+8#010 /ogonek 8#011 /ring 8#013 /breve 8#014 /minus 8#016 /Zcaron 8#017 /zcaron 
+8#020 /caron 8#021 /dotlessi 8#022 /dotlessj 8#023 /ff 8#024 /ffi 8#025 /ffl 
+8#036 /grave 8#037 /quotesingle 
+8#040 /space 8#041 /exclam 8#042 /quotedbl 8#043 /numbersign 8#044 /dollar 8#045 /percent 8#046 /ampersand 8#047 /quoteright 
+8#050 /parenleft 8#051 /parenright 8#052 /asterisk 8#053 /plus 8#054 /comma 8#055 /hyphen 8#056 /period 8#057 /slash 
+8#060 /zero 8#061 /one 8#062 /two 8#063 /three 8#064 /four 8#065 /five 8#066 /six 8#067 /seven 
+8#070 /eight 8#071 /nine 8#072 /colon 8#073 /semicolon 8#074 /less 8#075 /equal 8#076 /greater 8#077 /question 
+8#100 /at 8#101 /A 8#102 /B 8#103 /C 8#104 /D 8#105 /E 8#106 /F 8#107 /G 
+8#110 /H 8#111 /I 8#112 /J 8#113 /K 8#114 /L 8#115 /M 8#116 /N 8#117 /O 
+8#120 /P 8#121 /Q 8#122 /R 8#123 /S 8#124 /T 8#125 /U 8#126 /V 8#127 /W 
+8#130 /X 8#131 /Y 8#132 /Z 8#133 /bracketleft 8#134 /backslash 8#135 /bracketright 8#136 /asciicircum 8#137 /underscore 
+8#140 /quoteleft 8#141 /a 8#142 /b 8#143 /c 8#144 /d 8#145 /e 8#146 /f 8#147 /g 
+8#150 /h 8#151 /i 8#152 /j 8#153 /k 8#154 /l 8#155 /m 8#156 /n 8#157 /o 
+8#160 /p 8#161 /q 8#162 /r 8#163 /s 8#164 /t 8#165 /u 8#166 /v 8#167 /w 
+8#170 /x 8#171 /y 8#172 /z 8#173 /braceleft 8#174 /bar 8#175 /braceright 8#176 /asciitilde 
+8#202 /quotesinglbase 8#203 /florin 8#204 /quotedblbase 8#205 /ellipsis 8#206 /dagger 8#207 /daggerdbl 
+8#210 /circumflex 8#211 /perthousand 8#212 /Scaron 8#213 /guilsinglleft 8#214 /OE 
+8#223 /quotedblleft 8#224 /quotedblright 8#225 /bullet 8#226 /endash 8#227 /emdash 
+8#230 /tilde 8#231 /trademark 8#232 /scaron 8#233 /guilsinglright 8#234 /oe 8#237 /Ydieresis 
+8#241 /exclamdown 8#242 /cent 8#243 /sterling 8#244 /currency 8#245 /yen 8#246 /brokenbar 8#247 /section 
+8#250 /dieresis 8#251 /copyright 8#252 /ordfeminine 8#253 /guillemotleft 8#254 /logicalnot 8#255 /hyphen 8#256 /registered 8#257 /macron 
+8#260 /degree 8#261 /plusminus 8#262 /twosuperior 8#263 /threesuperior 8#264 /acute 8#265 /mu 8#266 /paragraph 8#267 /periodcentered 
+8#270 /cedilla 8#271 /onesuperior 8#272 /ordmasculine 8#273 /guillemotright 8#274 /onequarter 8#275 /onehalf 8#276 /threequarters 8#277 /questiondown 
+8#300 /Agrave 8#301 /Aacute 8#302 /Acircumflex 8#303 /Atilde 8#304 /Adieresis 8#305 /Aring 8#306 /AE 8#307 /Ccedilla 
+8#310 /Egrave 8#311 /Eacute 8#312 /Ecircumflex 8#313 /Edieresis 8#314 /Igrave 8#315 /Iacute 8#316 /Icircumflex 8#317 /Idieresis 
+8#320 /Eth 8#321 /Ntilde 8#322 /Ograve 8#323 /Oacute 8#324 /Ocircumflex 8#325 /Otilde 8#326 /Odieresis 8#327 /multiply 
+8#330 /Oslash 8#331 /Ugrave 8#332 /Uacute 8#333 /Ucircumflex 8#334 /Udieresis 8#335 /Yacute 8#336 /Thorn 8#337 /germandbls 
+8#340 /agrave 8#341 /aacute 8#342 /acircumflex 8#343 /atilde 8#344 /adieresis 8#345 /aring 8#346 /ae 8#347 /ccedilla 
+8#350 /egrave 8#351 /eacute 8#352 /ecircumflex 8#353 /edieresis 8#354 /igrave 8#355 /iacute 8#356 /icircumflex 8#357 /idieresis 
+8#360 /eth 8#361 /ntilde 8#362 /ograve 8#364 /oacute 8#365 /ocircumflex 8#366 /odieresis 8#367 /divide 
+8#370 /oslash 8#371 /ugrave 8#372 /uacute 8#373 /ucircumflex 8#374 /udieresis 8#375 /yacute 8#376 /thorn 8#377 /ydieresis 
+] def
+end
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+[ /Creator (draw.c \(PSLib\))
+  /Creation-Date (23/03/04 11:39 AM)
+  /Title (Drawing Examples)
+  /Author (Uwe Steinmann)
+  /Keywords (LineTo, MoveTo, Arc, Rect, Polygon)
+/DOCINFO pdfmark
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+
+%%Page: 1 1
+%%PageBoundingBox: 0 0 596 842
+save
+TeXDict begin
+[ /CropBox [0 0 596.00 842.00] /PAGE pdfmark
+gsave % start level 1
+50.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Lines)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+10.00 10.00 a
+90.00 10.00 l
+stroke
+[5.000000 5.000000] 0 setdash
+10.00 15.00 a
+90.00 30.00 l
+stroke
+[] 0 setdash
+2.000000 setlinewidth
+10.00 20.00 a
+90.00 50.00 l
+stroke
+1.000000 setlinewidth
+/DeviceRGB setcolorspace 1.0000 0.0000 0.0000 setcolor
+10.00 25.00 a
+90.00 70.00 l
+stroke
+/DeviceGray setcolorspace 0.000000 setcolor
+[5.000000 3.000000 1.000000 4.000000 ] 0 setdash
+10.00 30.00 a
+90.00 90.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+180.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Rectangles)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+newpath
+10.000000 10.000000 a
+45.000000 10.000000 l
+45.000000 45.000000 l
+10.000000 45.000000 l
+closepath
+stroke
+/DeviceRGB setcolorspace 0.0000 1.0000 0.0000 setcolor
+newpath
+50.000000 10.000000 a
+85.000000 10.000000 l
+85.000000 45.000000 l
+50.000000 45.000000 l
+closepath
+stroke
+/DeviceRGB setcolorspace 1.0000 1.0000 0.0000 setcolor
+newpath
+10.000000 50.000000 a
+45.000000 50.000000 l
+45.000000 85.000000 l
+10.000000 85.000000 l
+closepath
+fill
+3.000000 setlinewidth
+/DeviceRGB setcolorspace 1.0000 0.0000 0.0000 setcolor
+[5.000000 5.000000] 0 setdash
+newpath
+50.000000 50.000000 a
+85.000000 50.000000 l
+85.000000 85.000000 l
+50.000000 85.000000 l
+closepath
+stroke
+grestore % end level 1
+gsave % start level 1
+310.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Circles)p -0.17 w (,)p 3.34 w (Arcs)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+30.000000 30.000000 20.000000 0 360 arc
+stroke
+70.000000 30.000000 20.000000 0 360 arc
+fill
+30.000000 70.000000 20.000000 0.000000 270.000000 arc
+fill
+3.000000 setlinewidth
+/DeviceRGB setcolorspace 1.0000 0.0000 0.0000 setcolor
+[5.000000 5.000000] 0 setdash
+70.000000 70.000000 20.000000 0.000000 270.000000 arc
+stroke
+grestore % end level 1
+gsave % start level 1
+50.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Line)p 3.34 w (joins)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+5.000000 setlinewidth
+0 setlinejoin
+10.00 10.00 a
+25.00 40.00 l
+40.00 10.00 l
+stroke
+1 setlinejoin
+60.00 10.00 a
+75.00 40.00 l
+90.00 10.00 l
+stroke
+2 setlinejoin
+10.00 60.00 a
+25.00 90.00 l
+40.00 60.00 l
+stroke
+0.500000 setlinewidth
+/DeviceGray setcolorspace 1.000000 setcolor
+0 setlinejoin
+10.00 10.00 a
+25.00 40.00 l
+40.00 10.00 l
+stroke
+60.00 10.00 a
+75.00 40.00 l
+90.00 10.00 l
+stroke
+10.00 60.00 a
+25.00 90.00 l
+40.00 60.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+180.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Line)p 3.34 w (caps)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+5.000000 setlinewidth
+0 setlinecap
+10.00 10.00 a
+25.00 40.00 l
+40.00 10.00 l
+stroke
+1 setlinecap
+60.00 10.00 a
+75.00 40.00 l
+90.00 10.00 l
+stroke
+2 setlinecap
+10.00 60.00 a
+25.00 90.00 l
+40.00 60.00 l
+stroke
+0.500000 setlinewidth
+/DeviceGray setcolorspace 1.000000 setcolor
+0 setlinejoin
+10.00 10.00 a
+25.00 40.00 l
+40.00 10.00 l
+stroke
+60.00 10.00 a
+75.00 40.00 l
+90.00 10.00 l
+stroke
+10.00 60.00 a
+25.00 90.00 l
+40.00 60.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+310.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Miter)p 3.34 w (limit)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+13.00 10.00 a
+(10)p 
+10.000000 setmiterlimit
+11.00 10.00 a
+20.00 90.00 l
+29.00 10.00 l
+stroke
+47.00 10.00 a
+(5)p 
+5.000000 setmiterlimit
+41.00 10.00 a
+50.00 90.00 l
+59.00 10.00 l
+stroke
+77.00 10.00 a
+(1)p 
+1.000000 setmiterlimit
+71.00 10.00 a
+80.00 90.00 l
+89.00 10.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+440.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Cur)p 0.36 w (v)p -0.29 w (es)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+10.00 10.00 a
+10.000000 40.000000 40.000000 20.000000 50.000000 20.000000 curveto
+50.000000 20.000000 80.000000 90.000000 20.000000 70.000000 curveto
+20.000000 70.000000 80.000000 20.000000 10.000000 10.000000 curveto
+stroke
+/DeviceRGB setcolorspace 1.0000 0.0000 0.0000 setcolor
+50.00 10.00 a
+50.000000 10.000000 110.000000 40.000000 90.000000 90.000000 curveto
+90.000000 90.000000 30.000000 90.000000 80.000000 70.000000 curveto
+80.000000 70.000000 100.000000 10.000000 50.000000 10.000000 curveto
+fill
+grestore % end level 1
+gsave % start level 1
+50.00 375.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(PNG-Image)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+gsave
+25.00 30.50 scale
+/readstring { currentfile exch readhexstring pop } bind def
+/rpicstr 50 string def
+/gpicstr 50 string def
+/bpicstr 50 string def
+50 61 8
+[50 0 0 -61 -20.000000 81.000000]
+{ rpicstr readstring }
+{ gpicstr readstring }
+{ bpicstr readstring }
+true 3
+colorimage
+fffffffffffffffffffffffffffffffffffffffbeaede3e0ffdce3f1fbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffef9faf7f70ff607fbfefffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffff2b3c09a8eff829acdf2ffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffff8e0cbc7c7c7c7c7cbd2d5d5cbdcedfbffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffdf70100000000000103040401060afefffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffe68e433636363636435c68684382c0f2ffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffff1d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7dcf8ffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffbf500000000000000000000000000000000060dfffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffcd753636363636363636363636363636363682e6ffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffff8d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d5cbcbf1ffffffffffffffffffffff
+ffffffffffffffffffffffffffdf500000000000000000000000000000000000000000401010bfffffffffffffffffffffff
+ffffffffffffffffffffffffffe6753636363636363636363636363636363636363636684343cdffffffffffffffffffffff
+ffffffffffffffffffffffffe6cbc7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d2f1ffffffffffffffffff
+ffffffffffffffffffffffff8f100000000000000000000000000000000000000000000000000030bfffffffffffffffffff
+ffffffffffffffffffffffffa743363636363636363636363636363636363636363636363636365ccdffffffffffffffffff
+fffffffffffffffffffff4cec7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7e3ffffffffffffffff
+ffffffffffffffffffffcf2000000000000000000000000000000000000000000000000000000000007fffffffffffffffff
+ffffffffffffffffffffd94f36363636363636363636363636363636363636363636363636363636369affffffffffffffff
+ffffffffffffffffffeac7c7c7c7c7c7c7c7c7c7c7d9d5e0edf1f1f1f1ede3d5c7c7c7c7c7c7c7c7c7c7dcfbffffffffffff
+ffffffffffffffffff9f0000000000000000000000504070afbfbfbfbfaf7f400000000000000000000060efffffffffffff
+ffffffffffffffffffb3363636363636363636363675688ec0cdcdcdcdc09a683636363636363636363682f2ffffffffffff
+ffffffffffffffffeac7c7c7c7c7c7c7c7c7c7d5f4fffffffffffffffffffffffbeacec7c7c7c7c7c7c7c7d2fbffffffffff
+ffffffffffffffff9f0000000000000000000040cfffffffffffffffffffffffef9f20000000000000000030efffffffffff
+ffffffffffffffffb33636363636363636363668d9fffffffffffffffffffffff2b34f36363636363636365cf2ffffffffff
+ffffffffffffffeac7c7c7c7c7c7c7c7c7c7dcffffffffffffffffffffffffffffffffe3c7c7c7c7c7c7c7c7dcffffffffff
+ffffffffffffff9f0000000000000000000060ffffffffffffffffffffffffffffffff7f000000000000000060ffffffffff
+ffffffffffffffb33636363636363636363682ffffffffffffffffffffffffffffffff9a363636363636363682ffffffffff
+ffffffffffffedc7c7c7c7c7c7c7c7e3fbfffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7e3ffffffff
+ffffffffffffaf00000000000000007fefffffffffffffffffffffffffffffffffffffffcf10000000000000007fffffffff
+ffffffffffffc036363636363636369af2ffffffffffffffffffffffffffffffffffffffd943363636363636369affffffff
+ffffffffffffcbc7c7c7c7c7c7c7e6fffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7f1ffffff
+ffffffffffff10000000000000008fffffffffffffffffffffffffffffffffffffffffffffcf1000000000000000bfffffff
+ffffffffffff4336363636363636a7ffffffffffffffffffffffffffffffffffffffffffffd94336363636363636cdffffff
+ffffffffffdcc7c7c7c7c7c7d5eafbfffffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7ceffffff
+ffffffffff60000000000000409fefffffffffffffffffffffffffffffffffffffffffffffffcf1000000000000020ffffff
+ffffffffff8236363636363668b3f2ffffffffffffffffffffffffffffffffffffffffffffffd9433636363636364fffffff
+fffffffff8c7c7c7c7c7c7e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffedc7c7c7c7c7c7c7eaffff
+ffffffffdf0000000000008fffffffffffffffffffffffffffffffffffffffffffffffffffffffaf000000000000009fffff
+ffffffffe6363636363636a7ffffffffffffffffffffffffffffffffffffffffffffffffffffffc036363636363636b3ffff
+ffe3f1ffe3c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0c7c7c7c7c7c7ceffff
+ff7fbfff7f0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7000000000000020ffff
+ff9acdff9a3636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8e3636363636364fffff
+ffeafff1cbc7c7c7cbf4fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbcbc7c7c7c7cbcbf4ff
+ff9fffbf1000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffef10000000001010cfff
+ffb3ffcd4336363643d9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff243363636364343d9ff
+fffff8c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe3c7c7c7dcfbcbf8ff
+ffffdf0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f00000060ef10dfff
+ffffe63636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff9a36363682f243e6ff
+ffffdcc7c7c7c7f1fffffffffffffffffffffffffffffffffffff4f1f1f1fffffffffffffffffffffffbcbc7c7cbe3e3fbff
+ffff6000000000bfffffffffffffffffffffffffffffffffffffcfbfbfbfffffffffffffffffffffffef100000107f7fefff
+ffff8236363636cdffffffffffffffffffffffffffffffffffffd9cdcdcdfffffffffffffffffffffff2433636439a9af2ff
+f1fbcbc7c7c7e6fffffffffffffffffffffffffffffffffbe3cbc7c7c7c7c7dcf8ffffffffffffffffffdcc7c7c7d2f8eaff
+bfef100000008fffffffffffffffffffffffffffffffffef7f10000000000060dfffffffffffffffffff6000000030df9fff
+cdf243363636a7fffffffffffffffffffffffffffffffff29a43363636363682e6ffffffffffffffffff823636365ce6b3ff
+e3eac7c7c7c7f1fffffffffffffffffffffffffffffff4cbc7cbdcedf1f4f1e3ceeaffffffffffffffffeac7c7c7c7fbe3ff
+7f9f00000000bfffffffffffffffffffffffffffffffcf10001060afbfcfbf7f209fffffffffffffffff9f00000000ef7fff
+9ab336363636cdffffffffffffffffffffffffffffffd943364382c0cdd9cd9a4fb3ffffffffffffffffb336363636f29aff
+edd2c7c7c7cbfbfffffffffffffffffffffffffffff4cbc7e3fbffffffffffffffeaedfffffffffffffff1c7c7c7cbf1eaff
+af3000000010efffffffffffffffffffffffffffffcf10007fefffffffffffffff9fafffffffffffffffbf00000010bf9fff
+c05c36363643f2ffffffffffffffffffffffffffffd943369af2ffffffffffffffb3c0ffffffffffffffcd36363643cdb3ff
+f8c7c7c7c7e3fffffffffffffffffffffffffffffbcecbf1fffffffffffffffffffff8ffffffffffffffffc7c7c7cbfbf4ff
+df000000007fffffffffffffffffffffffffffffef2010bfffffffffffffffffffffdfffffffffffffffff00000010efcfff
+e6363636369afffffffffffffffffffffffffffff24f43cdffffffffffffffffffffe6ffffffffffffffff36363643f2d9ff
+eac7c7c7ceffffffffffffffffffffffffffffffd5c7edffffffffffffffffffffffffffffffffffffffffc7c7c7c7f8ffff
+9f00000020ffffffffffffffffffffffffffffff4000afffffffffffffffffffffffffffffffffffffffff00000000dfffff
+b33636364fffffffffffffffffffffffffffffff6836c0ffffffffffffffffffffffffffffffffffffffff36363636e6ffff
+d9c7c7c7e6ffffffffffffffffffffffffffffedc7dcffffffffffffffffffffffffffffffffffffffffffd2c7c7c7f8ffff
+500000008fffffffffffffffffffffffffffffaf0060ffffffffffffffffffffffffffffffffffffffffff30000000dfffff
+75363636a7ffffffffffffffffffffffffffffc03682ffffffffffffffffffffffffffffffffffffffffff5c363636e6ffff
+dcc7c7c7f1ffffffffffffffffffffffffffffdcc7f8ffffffffffffffffffffffffffffffffffffffffffd5c7c7c7d5ffff
+60000000bfffffffffffffffffffffffffffff6000dfffffffffffffffffffffffffffffffffffffffffff4000000040ffff
+82363636cdffffffffffffffffffffffffffff8236e6ffffffffffffffffffffffffffffffffffffffffff6836363668ffff
+e3c7c7c7fbfffffffffffffffffffffffffffbc7d9ffffffffffffffffffffffffffffffe6ffffffffffffd5c7c7c7e6ffff
+7f000000efffffffffffffffffffffffffffef0050ffffffffffffffffffffffffffffff8fffffffffffff400000008fffff
+9a363636f2fffffffffffffffffffffffffff23675ffffffffffffffffffffffffffffffa7ffffffffffff68363636a7ffff
+e3c7c7c7ffffffffffffffffffffffffffffe3c7e3ffffffffffffffffffffffffffffffe0ffffffffffffc7c7c7c7f8ffff
+7f000000ffffffffffffffffffffffffffff7f007fffffffffffffffffffffffffffffff70ffffffffffff00000000dfffff
+9a363636ffffffffffffffffffffffffffff9a369affffffffffffffffffffffffffffff8effffffffffff36363636e6ffff
+e3c7c7ceffffffffffffffffffffffffffffe3c7edfffffffffffffffffffffffffffffffffffffffffffbc7c7c7ceffffff
+7f000020ffffffffffffffffffffffffffff7f00afffffffffffffffffffffffffffffffffffffffffffef00000020ffffff
+9a36364fffffffffffffffffffffffffffff9a36c0fffffffffffffffffffffffffffffffffffffffffff23636364fffffff
+d9c7c7d5ffffffffffffffffffffffffffffe3c7dcfffffffffffffffffffffffffffffffffffffffffff8cbc7c7e0f1ffff
+50000040ffffffffffffffffffffffffffff7f0060ffffffffffffffffffffffffffffffffffffffffffdf10000070bfffff
+75363668ffffffffffffffffffffffffffff9a3682ffffffffffffffffffffffffffffffffffffffffffe64336368ecdffff
+d5c7c7d5ffffffffffffffffffffffffffffe3c7d5fffffffffffffffffffffffffff8e3fffffffffffff8c7c7c7eaedffff
+40000040ffffffffffffffffffffffffffff7f0040ffffffffffffffffffffffffffdf7fffffffffffffdf0000009fafffff
+68363668ffffffffffffffffffffffffffff9a3668ffffffffffffffffffffffffffe69affffffffffffe6363636b3c0ffff
+e0c7c7e0ffffffffffffffffffffffffffffe6c7ceffffffffffffffffffffffffffe0e3ffffffffffffe0c7c7dcf8eaffff
+70000070ffffffffffffffffffffffffffff8f0020ffffffffffffffffffffffffff707fffffffffffff70000060df9fffff
+8e36368effffffffffffffffffffffffffffa7364fffffffffffffffffffffffffff8e9affffffffffff8e363682e6b3ffff
+e0c7c7e3fffffffffffffffffffffffffffff4c7c7f4ffffffffffffffffffffffffd2f4ffffffffffe6cbc7c7f8edf8ffff
+7000007fffffffffffffffffffffffffffffcf0000cfffffffffffffffffffffffff30cfffffffffff8f100000dfafdfffff
+8e36369affffffffffffffffffffffffffffd93636d9ffffffffffffffffffffffff5cd9ffffffffffa7433636e6c0e6ffff
+d5c7c7e3ffffffffffffffffffffffffffffffcec7dcffffffffffffffffffffffffffffffffffffffc7c7c7d9ffe6ffffff
+4000007fffffffffffffffffffffffffffffff200060ffffffffffffffffffffffffffffffffffffff00000050ff8fffffff
+6836369affffffffffffffffffffffffffffff4f3682ffffffffffffffffffffffffffffffffffffff36363675ffa7ffffff
+e3c7c7d5ffffffffffffffffffffffffffffffcec7c7f4fffffffffffbd5d2dcfffffffffffffffff4c7c7e0edfbedffffff
+7f000040ffffffffffffffffffffffffffffff200000cfffffffffffef403060ffffffffffffffffcf000070afefafffffff
+9a363668ffffffffffffffffffffffffffffff4f3636d9fffffffffff2685c82ffffffffffffffffd936368ec0f2c0ffffff
+e3c7c7cefffffffffffffffffffffffffffff1e0d2c7d2fbfffffffffffffffffffffffffffffff4cbc7c7f4fff1ffffffff
+7f000020ffffffffffffffffffffffffffffbf70300030efffffffffffffffffffffffffffffffcf100000cfffbfffffffff
+9a36364fffffffffffffffffffffffffffffcd8e5c365cf2ffffffffffffffffffffffffffffffd9433636d9ffcdffffffff
+e3c7c7c7eaffffffffffffffffffffffffffd2ededcbc7dcffffffffffffffffffffffffffffeac7c7c7d5fbffffffffffff
+7f0000009fffffffffffffffffffffffffff30afaf100060ffffffffffffffffffffffffffff9f00000040efffffffffffff
+9a363636b3ffffffffffffffffffffffffff5cc0c0433682ffffffffffffffffffffffffffffb336363668f2ffffffffffff
+f1c7c7c7f1fffffffffffffffffffffffffff1d9e0edcbc7d2f8ffffffffffffffffffffeacec7c7cbeaffffffffffffffff
+bf000000bfffffffffffffffffffffffffffbf5070af100030dfffffffffffffffffffff9f200000109fffffffffffffffff
+cd363636cdffffffffffffffffffffffffffcd758ec043365ce6ffffffffffffffffffffb34f363643b3ffffffffffffffff
+f4c7c7c7e3ffffffffffffffffffffffffffffe0e3cbeacbc7cbe3fbfffffffffffff8dcc7c7c7cef4ffffffffffffffffff
+cf0000007fffffffffffffffffffffffffffff707f109f1000107fefffffffffffffdf6000000020cfffffffffffffffffff
+d93636369affffffffffffffffffffffffffff8e9a43b34336439af2ffffffffffffe6823636364fd9ffffffffffffffffff
+ffcbc7c7d2ffffffffffffffffffffffffffffffffeacbe0d2c7c7c7d9e3e6e3dccbc7c7c7c7e0fbffffffffffffffffffff
+ff10000030ffffffffffffffffffffffffffffffff9f107030000000507f8f7f60100000000070efffffffffffffffffffff
+ff4336365cffffffffffffffffffffffffffffffffb3438e5c363636759aa79a8243363636368ef2ffffffffffffffffffff
+ffd9c7c7cbfbfffffffffffffffffffffffffffffffff4d2d5cbcbc7c7c7c7c7c7c7c7cbdcf8ffffffffffffffffffffffff
+ff50000010efffffffffffffffffffffffffffffffffcf3040101000000000000000001060dfffffffffffffffffffffffff
+ff75363643f2ffffffffffffffffffffffffffffffffd95c68434336363636363636364382e6ffffffffffffffffffffffff
+ffe6c7c7c7e3ffffffffffffffffffffffffffffffffffffeaced9eaeae3e3e3e3e6f1ffffffffffffffffffffffffffffff
+ff8f0000007fffffffffffffffffffffffffffffffffffff9f20509f9f7f7f7f7f8fbfffffffffffffffffffffffffffffff
+ffa73636369affffffffffffffffffffffffffffffffffffb34f75b3b39a9a9a9aa7cdffffffffffffffffffffffffffffff
+fff8c7c7c7c7cbedffffffffffffffffffffffffffffffffffffeddcd5d5d9e3edffffffffffffffffffffffffffffffffff
+ffdf0000000010afffffffffffffffffffffffffffffffffffffaf604040507fafffffffffffffffffffffffffffffffffff
+ffe63636363643c0ffffffffffffffffffffffffffffffffffffc0826868759ac0ffffffffffffffffffffffffffffffffff
+ffffd5c7c7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff400000000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff683636363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffeac7c7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff9f00000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffb33636363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffcec7c7c7cbf8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff2000000010dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff4f36363643e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffe3c7c7c7c7e0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff7f0000000070ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff9a363636368effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffbcec7c7c7ceffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffef2000000020ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffff24f3636364fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffeac7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffff9f000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffb336363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffd5c7c7c7d5ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff4000000040ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff6836363668ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffff8cbc7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffdf10000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffe643363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffeac7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffff9f00000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffb336363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffdcc7c7c7d2f4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff6000000030cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff823636365cd9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffbd2c7c7c7dcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffef3000000060ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffff25c36363682ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffbd2c7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffef30000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffff25c363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffbd2c7c7cbd9fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffef3000001050efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffff25c36364375f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffbd2c7c7c7d2fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffef3000000030efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffff25c3636365cf2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffbdcc7c7c7cefbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffef6000000020efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffff2823636364ff2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffe6c7c7c7d5f8f8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffff8f00000040dfdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffa736363668e6e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff4d5c7c7cbceeaffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffcf40000010209fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffd9683636434fb3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffeacec7c7c7edffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff9f20000000afffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffb34f363636c0ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffead5c7c7dcf4ffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffff9f40000060cfffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffb368363682d9ffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffff8e6d5cbced5e3edfbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffdf8f401020407fafefffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffe6a768434f689ac0f2ffffffffffffffffffffffffffffffffffffffffff
+
+grestore
+gsave
+40.00 48.80 scale
+/readstring { currentfile exch readhexstring pop } bind def
+/rpicstr 50 string def
+/gpicstr 50 string def
+/bpicstr 50 string def
+50 61 8
+[50 0 0 -61 -50.000000 111.000000]
+{ rpicstr readstring }
+{ gpicstr readstring }
+{ bpicstr readstring }
+true 3
+colorimage
+fffffffffffffffffffffffffffffffffffffffbeaede3e0ffdce3f1fbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffef9faf7f70ff607fbfefffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffff2b3c09a8eff829acdf2ffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffff8e0cbc7c7c7c7c7cbd2d5d5cbdcedfbffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffdf70100000000000103040401060afefffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffe68e433636363636435c68684382c0f2ffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffff1d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7dcf8ffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffbf500000000000000000000000000000000060dfffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffcd753636363636363636363636363636363682e6ffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffff8d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d5cbcbf1ffffffffffffffffffffff
+ffffffffffffffffffffffffffdf500000000000000000000000000000000000000000401010bfffffffffffffffffffffff
+ffffffffffffffffffffffffffe6753636363636363636363636363636363636363636684343cdffffffffffffffffffffff
+ffffffffffffffffffffffffe6cbc7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d2f1ffffffffffffffffff
+ffffffffffffffffffffffff8f100000000000000000000000000000000000000000000000000030bfffffffffffffffffff
+ffffffffffffffffffffffffa743363636363636363636363636363636363636363636363636365ccdffffffffffffffffff
+fffffffffffffffffffff4cec7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7e3ffffffffffffffff
+ffffffffffffffffffffcf2000000000000000000000000000000000000000000000000000000000007fffffffffffffffff
+ffffffffffffffffffffd94f36363636363636363636363636363636363636363636363636363636369affffffffffffffff
+ffffffffffffffffffeac7c7c7c7c7c7c7c7c7c7c7d9d5e0edf1f1f1f1ede3d5c7c7c7c7c7c7c7c7c7c7dcfbffffffffffff
+ffffffffffffffffff9f0000000000000000000000504070afbfbfbfbfaf7f400000000000000000000060efffffffffffff
+ffffffffffffffffffb3363636363636363636363675688ec0cdcdcdcdc09a683636363636363636363682f2ffffffffffff
+ffffffffffffffffeac7c7c7c7c7c7c7c7c7c7d5f4fffffffffffffffffffffffbeacec7c7c7c7c7c7c7c7d2fbffffffffff
+ffffffffffffffff9f0000000000000000000040cfffffffffffffffffffffffef9f20000000000000000030efffffffffff
+ffffffffffffffffb33636363636363636363668d9fffffffffffffffffffffff2b34f36363636363636365cf2ffffffffff
+ffffffffffffffeac7c7c7c7c7c7c7c7c7c7dcffffffffffffffffffffffffffffffffe3c7c7c7c7c7c7c7c7dcffffffffff
+ffffffffffffff9f0000000000000000000060ffffffffffffffffffffffffffffffff7f000000000000000060ffffffffff
+ffffffffffffffb33636363636363636363682ffffffffffffffffffffffffffffffff9a363636363636363682ffffffffff
+ffffffffffffedc7c7c7c7c7c7c7c7e3fbfffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7e3ffffffff
+ffffffffffffaf00000000000000007fefffffffffffffffffffffffffffffffffffffffcf10000000000000007fffffffff
+ffffffffffffc036363636363636369af2ffffffffffffffffffffffffffffffffffffffd943363636363636369affffffff
+ffffffffffffcbc7c7c7c7c7c7c7e6fffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7f1ffffff
+ffffffffffff10000000000000008fffffffffffffffffffffffffffffffffffffffffffffcf1000000000000000bfffffff
+ffffffffffff4336363636363636a7ffffffffffffffffffffffffffffffffffffffffffffd94336363636363636cdffffff
+ffffffffffdcc7c7c7c7c7c7d5eafbfffffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7ceffffff
+ffffffffff60000000000000409fefffffffffffffffffffffffffffffffffffffffffffffffcf1000000000000020ffffff
+ffffffffff8236363636363668b3f2ffffffffffffffffffffffffffffffffffffffffffffffd9433636363636364fffffff
+fffffffff8c7c7c7c7c7c7e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffedc7c7c7c7c7c7c7eaffff
+ffffffffdf0000000000008fffffffffffffffffffffffffffffffffffffffffffffffffffffffaf000000000000009fffff
+ffffffffe6363636363636a7ffffffffffffffffffffffffffffffffffffffffffffffffffffffc036363636363636b3ffff
+ffe3f1ffe3c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0c7c7c7c7c7c7ceffff
+ff7fbfff7f0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7000000000000020ffff
+ff9acdff9a3636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8e3636363636364fffff
+ffeafff1cbc7c7c7cbf4fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbcbc7c7c7c7cbcbf4ff
+ff9fffbf1000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffef10000000001010cfff
+ffb3ffcd4336363643d9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff243363636364343d9ff
+fffff8c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe3c7c7c7dcfbcbf8ff
+ffffdf0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f00000060ef10dfff
+ffffe63636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff9a36363682f243e6ff
+ffffdcc7c7c7c7f1fffffffffffffffffffffffffffffffffffff4f1f1f1fffffffffffffffffffffffbcbc7c7cbe3e3fbff
+ffff6000000000bfffffffffffffffffffffffffffffffffffffcfbfbfbfffffffffffffffffffffffef100000107f7fefff
+ffff8236363636cdffffffffffffffffffffffffffffffffffffd9cdcdcdfffffffffffffffffffffff2433636439a9af2ff
+f1fbcbc7c7c7e6fffffffffffffffffffffffffffffffffbe3cbc7c7c7c7c7dcf8ffffffffffffffffffdcc7c7c7d2f8eaff
+bfef100000008fffffffffffffffffffffffffffffffffef7f10000000000060dfffffffffffffffffff6000000030df9fff
+cdf243363636a7fffffffffffffffffffffffffffffffff29a43363636363682e6ffffffffffffffffff823636365ce6b3ff
+e3eac7c7c7c7f1fffffffffffffffffffffffffffffff4cbc7cbdcedf1f4f1e3ceeaffffffffffffffffeac7c7c7c7fbe3ff
+7f9f00000000bfffffffffffffffffffffffffffffffcf10001060afbfcfbf7f209fffffffffffffffff9f00000000ef7fff
+9ab336363636cdffffffffffffffffffffffffffffffd943364382c0cdd9cd9a4fb3ffffffffffffffffb336363636f29aff
+edd2c7c7c7cbfbfffffffffffffffffffffffffffff4cbc7e3fbffffffffffffffeaedfffffffffffffff1c7c7c7cbf1eaff
+af3000000010efffffffffffffffffffffffffffffcf10007fefffffffffffffff9fafffffffffffffffbf00000010bf9fff
+c05c36363643f2ffffffffffffffffffffffffffffd943369af2ffffffffffffffb3c0ffffffffffffffcd36363643cdb3ff
+f8c7c7c7c7e3fffffffffffffffffffffffffffffbcecbf1fffffffffffffffffffff8ffffffffffffffffc7c7c7cbfbf4ff
+df000000007fffffffffffffffffffffffffffffef2010bfffffffffffffffffffffdfffffffffffffffff00000010efcfff
+e6363636369afffffffffffffffffffffffffffff24f43cdffffffffffffffffffffe6ffffffffffffffff36363643f2d9ff
+eac7c7c7ceffffffffffffffffffffffffffffffd5c7edffffffffffffffffffffffffffffffffffffffffc7c7c7c7f8ffff
+9f00000020ffffffffffffffffffffffffffffff4000afffffffffffffffffffffffffffffffffffffffff00000000dfffff
+b33636364fffffffffffffffffffffffffffffff6836c0ffffffffffffffffffffffffffffffffffffffff36363636e6ffff
+d9c7c7c7e6ffffffffffffffffffffffffffffedc7dcffffffffffffffffffffffffffffffffffffffffffd2c7c7c7f8ffff
+500000008fffffffffffffffffffffffffffffaf0060ffffffffffffffffffffffffffffffffffffffffff30000000dfffff
+75363636a7ffffffffffffffffffffffffffffc03682ffffffffffffffffffffffffffffffffffffffffff5c363636e6ffff
+dcc7c7c7f1ffffffffffffffffffffffffffffdcc7f8ffffffffffffffffffffffffffffffffffffffffffd5c7c7c7d5ffff
+60000000bfffffffffffffffffffffffffffff6000dfffffffffffffffffffffffffffffffffffffffffff4000000040ffff
+82363636cdffffffffffffffffffffffffffff8236e6ffffffffffffffffffffffffffffffffffffffffff6836363668ffff
+e3c7c7c7fbfffffffffffffffffffffffffffbc7d9ffffffffffffffffffffffffffffffe6ffffffffffffd5c7c7c7e6ffff
+7f000000efffffffffffffffffffffffffffef0050ffffffffffffffffffffffffffffff8fffffffffffff400000008fffff
+9a363636f2fffffffffffffffffffffffffff23675ffffffffffffffffffffffffffffffa7ffffffffffff68363636a7ffff
+e3c7c7c7ffffffffffffffffffffffffffffe3c7e3ffffffffffffffffffffffffffffffe0ffffffffffffc7c7c7c7f8ffff
+7f000000ffffffffffffffffffffffffffff7f007fffffffffffffffffffffffffffffff70ffffffffffff00000000dfffff
+9a363636ffffffffffffffffffffffffffff9a369affffffffffffffffffffffffffffff8effffffffffff36363636e6ffff
+e3c7c7ceffffffffffffffffffffffffffffe3c7edfffffffffffffffffffffffffffffffffffffffffffbc7c7c7ceffffff
+7f000020ffffffffffffffffffffffffffff7f00afffffffffffffffffffffffffffffffffffffffffffef00000020ffffff
+9a36364fffffffffffffffffffffffffffff9a36c0fffffffffffffffffffffffffffffffffffffffffff23636364fffffff
+d9c7c7d5ffffffffffffffffffffffffffffe3c7dcfffffffffffffffffffffffffffffffffffffffffff8cbc7c7e0f1ffff
+50000040ffffffffffffffffffffffffffff7f0060ffffffffffffffffffffffffffffffffffffffffffdf10000070bfffff
+75363668ffffffffffffffffffffffffffff9a3682ffffffffffffffffffffffffffffffffffffffffffe64336368ecdffff
+d5c7c7d5ffffffffffffffffffffffffffffe3c7d5fffffffffffffffffffffffffff8e3fffffffffffff8c7c7c7eaedffff
+40000040ffffffffffffffffffffffffffff7f0040ffffffffffffffffffffffffffdf7fffffffffffffdf0000009fafffff
+68363668ffffffffffffffffffffffffffff9a3668ffffffffffffffffffffffffffe69affffffffffffe6363636b3c0ffff
+e0c7c7e0ffffffffffffffffffffffffffffe6c7ceffffffffffffffffffffffffffe0e3ffffffffffffe0c7c7dcf8eaffff
+70000070ffffffffffffffffffffffffffff8f0020ffffffffffffffffffffffffff707fffffffffffff70000060df9fffff
+8e36368effffffffffffffffffffffffffffa7364fffffffffffffffffffffffffff8e9affffffffffff8e363682e6b3ffff
+e0c7c7e3fffffffffffffffffffffffffffff4c7c7f4ffffffffffffffffffffffffd2f4ffffffffffe6cbc7c7f8edf8ffff
+7000007fffffffffffffffffffffffffffffcf0000cfffffffffffffffffffffffff30cfffffffffff8f100000dfafdfffff
+8e36369affffffffffffffffffffffffffffd93636d9ffffffffffffffffffffffff5cd9ffffffffffa7433636e6c0e6ffff
+d5c7c7e3ffffffffffffffffffffffffffffffcec7dcffffffffffffffffffffffffffffffffffffffc7c7c7d9ffe6ffffff
+4000007fffffffffffffffffffffffffffffff200060ffffffffffffffffffffffffffffffffffffff00000050ff8fffffff
+6836369affffffffffffffffffffffffffffff4f3682ffffffffffffffffffffffffffffffffffffff36363675ffa7ffffff
+e3c7c7d5ffffffffffffffffffffffffffffffcec7c7f4fffffffffffbd5d2dcfffffffffffffffff4c7c7e0edfbedffffff
+7f000040ffffffffffffffffffffffffffffff200000cfffffffffffef403060ffffffffffffffffcf000070afefafffffff
+9a363668ffffffffffffffffffffffffffffff4f3636d9fffffffffff2685c82ffffffffffffffffd936368ec0f2c0ffffff
+e3c7c7cefffffffffffffffffffffffffffff1e0d2c7d2fbfffffffffffffffffffffffffffffff4cbc7c7f4fff1ffffffff
+7f000020ffffffffffffffffffffffffffffbf70300030efffffffffffffffffffffffffffffffcf100000cfffbfffffffff
+9a36364fffffffffffffffffffffffffffffcd8e5c365cf2ffffffffffffffffffffffffffffffd9433636d9ffcdffffffff
+e3c7c7c7eaffffffffffffffffffffffffffd2ededcbc7dcffffffffffffffffffffffffffffeac7c7c7d5fbffffffffffff
+7f0000009fffffffffffffffffffffffffff30afaf100060ffffffffffffffffffffffffffff9f00000040efffffffffffff
+9a363636b3ffffffffffffffffffffffffff5cc0c0433682ffffffffffffffffffffffffffffb336363668f2ffffffffffff
+f1c7c7c7f1fffffffffffffffffffffffffff1d9e0edcbc7d2f8ffffffffffffffffffffeacec7c7cbeaffffffffffffffff
+bf000000bfffffffffffffffffffffffffffbf5070af100030dfffffffffffffffffffff9f200000109fffffffffffffffff
+cd363636cdffffffffffffffffffffffffffcd758ec043365ce6ffffffffffffffffffffb34f363643b3ffffffffffffffff
+f4c7c7c7e3ffffffffffffffffffffffffffffe0e3cbeacbc7cbe3fbfffffffffffff8dcc7c7c7cef4ffffffffffffffffff
+cf0000007fffffffffffffffffffffffffffff707f109f1000107fefffffffffffffdf6000000020cfffffffffffffffffff
+d93636369affffffffffffffffffffffffffff8e9a43b34336439af2ffffffffffffe6823636364fd9ffffffffffffffffff
+ffcbc7c7d2ffffffffffffffffffffffffffffffffeacbe0d2c7c7c7d9e3e6e3dccbc7c7c7c7e0fbffffffffffffffffffff
+ff10000030ffffffffffffffffffffffffffffffff9f107030000000507f8f7f60100000000070efffffffffffffffffffff
+ff4336365cffffffffffffffffffffffffffffffffb3438e5c363636759aa79a8243363636368ef2ffffffffffffffffffff
+ffd9c7c7cbfbfffffffffffffffffffffffffffffffff4d2d5cbcbc7c7c7c7c7c7c7c7cbdcf8ffffffffffffffffffffffff
+ff50000010efffffffffffffffffffffffffffffffffcf3040101000000000000000001060dfffffffffffffffffffffffff
+ff75363643f2ffffffffffffffffffffffffffffffffd95c68434336363636363636364382e6ffffffffffffffffffffffff
+ffe6c7c7c7e3ffffffffffffffffffffffffffffffffffffeaced9eaeae3e3e3e3e6f1ffffffffffffffffffffffffffffff
+ff8f0000007fffffffffffffffffffffffffffffffffffff9f20509f9f7f7f7f7f8fbfffffffffffffffffffffffffffffff
+ffa73636369affffffffffffffffffffffffffffffffffffb34f75b3b39a9a9a9aa7cdffffffffffffffffffffffffffffff
+fff8c7c7c7c7cbedffffffffffffffffffffffffffffffffffffeddcd5d5d9e3edffffffffffffffffffffffffffffffffff
+ffdf0000000010afffffffffffffffffffffffffffffffffffffaf604040507fafffffffffffffffffffffffffffffffffff
+ffe63636363643c0ffffffffffffffffffffffffffffffffffffc0826868759ac0ffffffffffffffffffffffffffffffffff
+ffffd5c7c7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff400000000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff683636363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffeac7c7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff9f00000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffb33636363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffcec7c7c7cbf8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff2000000010dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff4f36363643e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffe3c7c7c7c7e0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff7f0000000070ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff9a363636368effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffbcec7c7c7ceffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffef2000000020ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffff24f3636364fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffeac7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffff9f000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffb336363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffd5c7c7c7d5ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff4000000040ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff6836363668ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffff8cbc7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffdf10000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffe643363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffeac7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffff9f00000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffb336363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffdcc7c7c7d2f4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff6000000030cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff823636365cd9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffbd2c7c7c7dcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffef3000000060ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffff25c36363682ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffbd2c7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffef30000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffff25c363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffbd2c7c7cbd9fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffef3000001050efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffff25c36364375f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffbd2c7c7c7d2fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffef3000000030efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffff25c3636365cf2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffbdcc7c7c7cefbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffef6000000020efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffff2823636364ff2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffe6c7c7c7d5f8f8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffff8f00000040dfdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffa736363668e6e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff4d5c7c7cbceeaffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffcf40000010209fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffd9683636434fb3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffeacec7c7c7edffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff9f20000000afffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffb34f363636c0ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffead5c7c7dcf4ffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffff9f40000060cfffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffb368363682d9ffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffff8e6d5cbced5e3edfbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffdf8f401020407fafefffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffe6a768434f689ac0f2ffffffffffffffffffffffffffffffffffffffffff
+
+grestore
+grestore % end level 1
+gsave % start level 1
+180.00 375.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(EPS-Image)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+gsave % start level 2
+/showpage{}N/erasepage{}N/copypage{}N
+10.00 10.00 translate
+0.300000 0.300000 scale
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: test.fig
+%%Creator: fig2dev Version 3.2 Patchlevel 4
+%%CreationDate: Tue Feb  3 16:50:34 2004
+%%For: steinm@pb.steinmann.cx (Uwe Steinmann,,,)
+%%BoundingBox: 0 0 271 243
+%%Magnification: 1.0000
+%%EndComments
+/MyAppDict 100 dict dup begin def
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 243 moveto 0 0 lineto 271 0 lineto 271 243 lineto closepath clip newpath
+-131.9 356.2 translate
+1 -1 scale
+
+% This junk string is used by the show operators
+/PATsstr 1 string def
+/PATawidthshow { 	% cx cy cchar rx ry string
+  % Loop over each character in the string
+  {  % cx cy cchar rx ry char
+    % Show the character
+    dup				% cx cy cchar rx ry char char
+    PATsstr dup 0 4 -1 roll put	% cx cy cchar rx ry char (char)
+    false charpath		% cx cy cchar rx ry char
+    /clip load PATdraw
+    % Move past the character (charpath modified the
+    % current point)
+    currentpoint			% cx cy cchar rx ry char x y
+    newpath
+    moveto			% cx cy cchar rx ry char
+    % Reposition by cx,cy if the character in the string is cchar
+    3 index eq {			% cx cy cchar rx ry
+      4 index 4 index rmoveto
+    } if
+    % Reposition all characters by rx ry
+    2 copy rmoveto		% cx cy cchar rx ry
+  } forall
+  pop pop pop pop pop		% -
+  currentpoint
+  newpath
+  moveto
+} bind def
+/PATcg {
+  7 dict dup begin
+    /lw currentlinewidth def
+    /lc currentlinecap def
+    /lj currentlinejoin def
+    /ml currentmiterlimit def
+    /ds [ currentdash ] def
+    /cc [ currentrgbcolor ] def
+    /cm matrix currentmatrix def
+  end
+} bind def
+% PATdraw - calculates the boundaries of the object and
+% fills it with the current pattern
+/PATdraw {			% proc
+  save exch
+    PATpcalc			% proc nw nh px py
+    5 -1 roll exec		% nw nh px py
+    newpath
+    PATfill			% -
+  restore
+} bind def
+% PATfill - performs the tiling for the shape
+/PATfill { % nw nh px py PATfill -
+  PATDict /CurrentPattern get dup begin
+    setfont
+    % Set the coordinate system to Pattern Space
+    PatternGState PATsg
+    % Set the color for uncolored pattezns
+    PaintType 2 eq { PATDict /PColor get PATsc } if
+    % Create the string for showing
+    3 index string		% nw nh px py str
+    % Loop for each of the pattern sources
+    0 1 Multi 1 sub {		% nw nh px py str source
+	% Move to the starting location
+	3 index 3 index		% nw nh px py str source px py
+	moveto			% nw nh px py str source
+	% For multiple sources, set the appropriate color
+	Multi 1 ne { dup PC exch get PATsc } if
+	% Set the appropriate string for the source
+	0 1 7 index 1 sub { 2 index exch 2 index put } for pop
+	% Loop over the number of vertical cells
+	3 index 		% nw nh px py str nh
+	{			% nw nh px py str
+	  currentpoint		% nw nh px py str cx cy
+	  2 index oldshow	% nw nh px py str cx cy
+	  YStep add moveto	% nw nh px py str
+	} repeat		% nw nh px py str
+    } for
+    5 { pop } repeat
+  end
+} bind def
+
+% PATkshow - kshow with the current pattezn
+/PATkshow {			% proc string
+  exch bind			% string proc
+  1 index 0 get			% string proc char
+  % Loop over all but the last character in the string
+  0 1 4 index length 2 sub {
+				% string proc char idx
+    % Find the n+1th character in the string
+    3 index exch 1 add get	% string proc char char+1
+    exch 2 copy			% strinq proc char+1 char char+1 char
+    % Now show the nth character
+    PATsstr dup 0 4 -1 roll put	% string proc chr+1 chr chr+1 (chr)
+    false charpath		% string proc char+1 char char+1
+    /clip load PATdraw
+    % Move past the character (charpath modified the current point)
+    currentpoint newpath moveto
+    % Execute the user proc (should consume char and char+1)
+    mark 3 1 roll		% string proc char+1 mark char char+1
+    4 index exec		% string proc char+1 mark...
+    cleartomark			% string proc char+1
+  } for
+  % Now display the last character
+  PATsstr dup 0 4 -1 roll put	% string proc (char+1)
+  false charpath		% string proc
+  /clip load PATdraw
+  neewath
+  pop pop			% -
+} bind def
+% PATmp - the makepattern equivalent
+/PATmp {			% patdict patmtx PATmp patinstance
+  exch dup length 7 add		% We will add 6 new entries plus 1 FID
+  dict copy			% Create a new dictionary
+  begin
+    % Matrix to install when painting the pattern
+    TilingType PATtcalc
+    /PatternGState PATcg def
+    PatternGState /cm 3 -1 roll put
+    % Check for multi pattern sources (Level 1 fast color patterns)
+    currentdict /Multi known not { /Multi 1 def } if
+    % Font dictionary definitions
+    /FontType 3 def
+    % Create a dummy encoding vector
+    /Encoding 256 array def
+    3 string 0 1 255 {
+      Encoding exch dup 3 index cvs cvn put } for pop
+    /FontMatrix matrix def
+    /FontBBox BBox def
+    /BuildChar {
+	mark 3 1 roll		% mark dict char
+	exch begin
+	Multi 1 ne {PaintData exch get}{pop} ifelse  % mark [paintdata]
+	  PaintType 2 eq Multi 1 ne or
+	  { XStep 0 FontBBox aload pop setcachedevice }
+	  { XStep 0 setcharwidth } ifelse
+	  currentdict		% mark [paintdata] dict
+	  /PaintProc load	% mark [paintdata] dict paintproc
+	end
+	gsave
+	  false PATredef exec true PATredef
+	grestore
+	cleartomark		% -
+    } bind def
+    currentdict
+  end				% newdict
+  /foo exch			% /foo newlict
+  definefont			% newfont
+} bind def
+% PATpcalc - calculates the starting point and width/height
+% of the tile fill for the shape
+/PATpcalc {	% - PATpcalc nw nh px py
+  PATDict /CurrentPattern get begin
+    gsave
+	% Set up the coordinate system to Pattern Space
+	% and lock down pattern
+	PatternGState /cm get setmatrix
+	BBox aload pop pop pop translate
+	% Determine the bounding box of the shape
+	pathbbox			% llx lly urx ury
+    grestore
+    % Determine (nw, nh) the # of cells to paint width and height
+    PatHeight div ceiling		% llx lly urx qh
+    4 1 roll				% qh llx lly urx
+    PatWidth div ceiling		% qh llx lly qw
+    4 1 roll				% qw qh llx lly
+    PatHeight div floor			% qw qh llx ph
+    4 1 roll				% ph qw qh llx
+    PatWidth div floor			% ph qw qh pw
+    4 1 roll				% pw ph qw qh
+    2 index sub cvi abs			% pw ph qs qh-ph
+    exch 3 index sub cvi abs exch	% pw ph nw=qw-pw nh=qh-ph
+    % Determine the starting point of the pattern fill
+    %(px, py)
+    4 2 roll				% nw nh pw ph
+    PatHeight mul			% nw nh pw py
+    exch				% nw nh py pw
+    PatWidth mul exch			% nw nh px py
+  end
+} bind def
+
+% Save the original routines so that we can use them later on
+/oldfill	/fill load def
+/oldeofill	/eofill load def
+/oldstroke	/stroke load def
+/oldshow	/show load def
+/oldashow	/ashow load def
+/oldwidthshow	/widthshow load def
+/oldawidthshow	/awidthshow load def
+/oldkshow	/kshow load def
+
+% These defs are necessary so that subsequent procs don't bind in
+% the originals
+/fill	   { oldfill } bind def
+/eofill	   { oldeofill } bind def
+/stroke	   { oldstroke } bind def
+/show	   { oldshow } bind def
+/ashow	   { oldashow } bind def
+/widthshow { oldwidthshow } bind def
+/awidthshow { oldawidthshow } bind def
+/kshow 	   { oldkshow } bind def
+/PATredef {
+  MyAppDict begin
+    {
+    /fill { /clip load PATdraw newpath } bind def
+    /eofill { /eoclip load PATdraw newpath } bind def
+    /stroke { PATstroke } bind def
+    /show { 0 0 null 0 0 6 -1 roll PATawidthshow } bind def
+    /ashow { 0 0 null 6 3 roll PATawidthshow }
+    bind def
+    /widthshow { 0 0 3 -1 roll PATawidthshow }
+    bind def
+    /awidthshow { PATawidthshow } bind def
+    /kshow { PATkshow } bind def
+  } {
+    /fill   { oldfill } bind def
+    /eofill { oldeofill } bind def
+    /stroke { oldstroke } bind def
+    /show   { oldshow } bind def
+    /ashow  { oldashow } bind def
+    /widthshow { oldwidthshow } bind def
+    /awidthshow { oldawidthshow } bind def
+    /kshow  { oldkshow } bind def
+    } ifelse
+  end
+} bind def
+false PATredef
+% Conditionally define setcmykcolor if not available
+/setcmykcolor where { pop } {
+  /setcmykcolor {
+    1 sub 4 1 roll
+    3 {
+	3 index add neg dup 0 lt { pop 0 } if 3 1 roll
+    } repeat
+    setrgbcolor - pop
+  } bind def
+} ifelse
+/PATsc {		% colorarray
+  aload length		% c1 ... cn length
+    dup 1 eq { pop setgray } { 3 eq { setrgbcolor } { setcmykcolor
+  } ifelse } ifelse
+} bind def
+/PATsg {		% dict
+  begin
+    lw setlinewidth
+    lc setlinecap
+    lj setlinejoin
+    ml setmiterlimit
+    ds aload pop setdash
+    cc aload pop setrgbcolor
+    cm setmatrix
+  end
+} bind def
+
+/PATDict 3 dict def
+/PATsp {
+  true PATredef
+  PATDict begin
+    /CurrentPattern exch def
+    % If it's an uncolored pattern, save the color
+    CurrentPattern /PaintType get 2 eq {
+      /PColor exch def
+    } if
+    /CColor [ currentrgbcolor ] def
+  end
+} bind def
+% PATstroke - stroke with the current pattern
+/PATstroke {
+  countdictstack
+  save
+  mark
+  {
+    currentpoint strokepath moveto
+    PATpcalc				% proc nw nh px py
+    clip newpath PATfill
+    } stopped {
+	(*** PATstroke Warning: Path is too complex, stroking
+	  with gray) =
+    cleartomark
+    restore
+    countdictstack exch sub dup 0 gt
+	{ { end } repeat } { pop } ifelse
+    gsave 0.5 setgray oldstroke grestore
+  } { pop restore pop } ifelse
+  newpath
+} bind def
+/PATtcalc {		% modmtx tilingtype PATtcalc tilematrix
+  % Note: tiling types 2 and 3 are not supported
+  gsave
+    exch concat					% tilingtype
+    matrix currentmatrix exch			% cmtx tilingtype
+    % Tiling type 1 and 3: constant spacing
+    2 ne {
+	% Distort the pattern so that it occupies
+	% an integral number of device pixels
+	dup 4 get exch dup 5 get exch		% tx ty cmtx
+	XStep 0 dtransform
+	round exch round exch			% tx ty cmtx dx.x dx.y
+	XStep div exch XStep div exch		% tx ty cmtx a b
+	0 YStep dtransform
+	round exch round exch			% tx ty cmtx a b dy.x dy.y
+	YStep div exch YStep div exch		% tx ty cmtx a b c d
+	7 -3 roll astore			% { a b c d tx ty }
+    } if
+  grestore
+} bind def
+/PATusp {
+  false PATredef
+  PATDict begin
+    CColor PATsc
+  end
+} bind def
+
+% right-shingles
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 48 48 true [ 48 0 0 -48 0 48 ]
+	{<000000000080000000000080000000000040000000000040
+	000000000020000000000020000000000010000000000010
+	000000000008000000000008000000000004000000000004
+	000000000002000000000002000000000001ffffffffffff
+	008000000000008000000000004000000000004000000000
+	002000000000002000000000001000000000001000000000
+	000800000000000800000000000400000000000400000000
+	000200000000000200000000000100000000ffffffffffff
+	000000800000000000800000000000400000000000400000
+	000000200000000000200000000000100000000000100000
+	000000080000000000080000000000040000000000040000
+	000000020000000000020000000000010000ffffffffffff>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P13 exch def
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+10 setmiterlimit
+0 slj 0 slc
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+% 
+% here starts figure with depth 50
+% Polyline
+45.000 slw
+n 4290 4095 m 4185 4095 4185 4890 105 arcto 4 {pop} repeat
+  4185 4995 5070 4995 105 arcto 4 {pop} repeat
+  5175 4995 5175 4200 105 arcto 4 {pop} repeat
+  5175 4095 4290 4095 105 arcto 4 {pop} repeat
+ cp gs col1 1.00 shd ef gr gs col27 s gr 
+% Polyline
+7.500 slw
+n 3690 3195 m 5715 3195 l 5715 3960 l 3690 3960 l
+ cp gs col0 s gr 
+% Polyline
+2 slj
+45.000 slw
+n 6345 2970 m 6344 2969 l 6340 2968 l 6334 2964 l 6325 2959 l 6311 2952 l
+ 6292 2942 l 6269 2930 l 6240 2915 l 6205 2897 l 6165 2876 l
+ 6119 2852 l 6069 2826 l 6013 2798 l 5954 2767 l 5891 2734 l
+ 5824 2700 l 5755 2665 l 5685 2629 l 5613 2592 l 5540 2555 l
+ 5467 2519 l 5395 2482 l 5323 2446 l 5253 2411 l 5184 2377 l
+ 5117 2344 l 5052 2313 l 4989 2282 l 4928 2253 l 4869 2225 l
+ 4812 2198 l 4757 2173 l 4705 2149 l 4654 2126 l 4605 2105 l
+ 4559 2084 l 4514 2065 l 4470 2047 l 4428 2030 l 4388 2014 l
+ 4349 2000 l 4310 1986 l 4273 1972 l 4237 1960 l 4202 1949 l
+ 4167 1938 l 4133 1928 l 4090 1915 l 4048 1904 l 4007 1894 l
+ 3966 1885 l 3926 1877 l 3885 1869 l 3846 1863 l 3806 1857 l
+ 3767 1852 l 3727 1849 l 3688 1846 l 3650 1844 l 3611 1843 l
+ 3573 1843 l 3536 1844 l 3498 1846 l 3461 1849 l 3425 1852 l
+ 3389 1857 l 3354 1863 l 3319 1869 l 3285 1877 l 3251 1885 l
+ 3219 1894 l 3187 1904 l 3156 1914 l 3125 1925 l 3096 1937 l
+ 3067 1949 l 3039 1962 l 3011 1976 l 2985 1990 l 2958 2005 l
+ 2933 2020 l 2908 2035 l 2883 2051 l 2859 2068 l 2835 2085 l
+ 2810 2104 l 2785 2123 l 2760 2143 l 2735 2164 l 2710 2186 l
+ 2685 2209 l 2660 2233 l 2636 2257 l 2611 2283 l 2586 2310 l
+ 2562 2338 l 2537 2367 l 2513 2397 l 2490 2428 l 2466 2460 l
+ 2443 2493 l 2421 2527 l 2399 2562 l 2378 2597 l 2357 2633 l
+ 2337 2669 l 2318 2707 l 2300 2744 l 2283 2782 l 2267 2820 l
+ 2252 2859 l 2237 2897 l 2224 2936 l 2212 2975 l 2200 3015 l
+ 2190 3054 l 2180 3094 l 2172 3133 l 2165 3174 l 2158 3214 l
+ 2153 3255 l 2148 3292 l 2145 3330 l 2142 3369 l 2140 3408 l
+ 2138 3448 l 2138 3489 l 2138 3531 l 2138 3574 l 2140 3617 l
+ 2142 3661 l 2145 3706 l 2149 3752 l 2154 3798 l 2159 3845 l
+ 2165 3892 l 2172 3940 l 2180 3988 l 2188 4037 l 2197 4085 l
+ 2207 4134 l 2217 4182 l 2228 4230 l 2240 4278 l 2252 4326 l
+ 2265 4373 l 2278 4419 l 2292 4465 l 2306 4510 l 2321 4554 l
+ 2336 4598 l 2351 4640 l 2367 4682 l 2383 4722 l 2400 4762 l
+ 2417 4800 l 2434 4838 l 2451 4875 l 2469 4911 l 2487 4946 l
+ 2505 4980 l 2526 5017 l 2547 5054 l 2569 5090 l 2592 5125 l
+ 2615 5160 l 2638 5194 l 2663 5227 l 2687 5260 l 2712 5291 l
+ 2738 5322 l 2764 5352 l 2790 5380 l 2816 5408 l 2843 5434 l
+ 2869 5458 l 2895 5481 l 2921 5502 l 2947 5522 l 2973 5540 l
+ 2997 5556 l 3022 5570 l 3045 5582 l 3068 5592 l 3090 5600 l
+ 3111 5605 l 3131 5609 l 3150 5610 l 3168 5610 l 3185 5607 l
+ 3201 5602 l 3215 5595 l 3228 5586 l 3241 5574 l 3252 5561 l
+ 3261 5545 l 3270 5528 l 3277 5510 l 3283 5490 l 3288 5468 l
+ 3292 5445 l 3295 5419 l 3298 5392 l 3300 5363 l 3301 5332 l
+ 3302 5299 l 3302 5264 l 3301 5227 l 3300 5189 l 3299 5149 l
+ 3297 5107 l 3294 5064 l 3291 5019 l 3288 4973 l 3285 4926 l
+ 3281 4878 l 3278 4829 l 3274 4780 l 3270 4729 l 3266 4679 l
+ 3262 4628 l 3259 4576 l 3255 4525 l 3252 4474 l 3249 4423 l
+ 3246 4372 l 3244 4322 l 3242 4272 l 3240 4223 l 3239 4175 l
+ 3238 4127 l 3238 4080 l 3239 4033 l 3240 3988 l 3242 3943 l
+ 3244 3899 l 3248 3855 l 3251 3814 l 3256 3773 l 3261 3733 l
+ 3267 3693 l 3274 3653 l 3282 3614 l 3290 3575 l 3300 3536 l
+ 3310 3497 l 3322 3458 l 3334 3420 l 3347 3382 l 3362 3344 l
+ 3377 3307 l 3393 3270 l 3411 3234 l 3429 3199 l 3448 3164 l
+ 3469 3129 l 3490 3096 l 3512 3063 l 3535 3031 l 3559 3001 l
+ 3584 2971 l 3610 2942 l 3636 2915 l 3663 2889 l 3691 2863 l
+ 3719 2839 l 3748 2817 l 3778 2795 l 3808 2775 l 3839 2756 l
+ 3870 2739 l 3902 2722 l 3934 2707 l 3967 2693 l 4000 2680 l
+ 4034 2668 l 4069 2658 l 4104 2648 l 4140 2640 l 4174 2633 l
+ 4208 2627 l 4243 2623 l 4279 2619 l 4317 2616 l 4355 2614 l
+ 4395 2613 l 4437 2613 l 4480 2614 l 4525 2616 l 4572 2619 l
+ 4621 2623 l 4672 2628 l 4726 2635 l 4781 2642 l 4840 2650 l
+ 4900 2660 l 4963 2670 l 5029 2681 l 5097 2693 l 5167 2707 l
+ 5239 2721 l 5313 2735 l 5388 2751 l 5464 2767 l 5541 2783 l
+ 5617 2800 l 5692 2816 l 5767 2833 l 5839 2849 l 5908 2865 l
+ 5973 2881 l 6034 2895 l 6090 2908 l 6141 2920 l 6186 2931 l
+ 6225 2941 l 6258 2949 l 6285 2955 l 6306 2960 l 6322 2964 l
+ 6333 2967 l 6340 2969 l 6343 2970 l
+ 6345 2970 l  cp gs /PC [[1.00 0.00 0.00] [0.00 0.56 0.56]] def
+15.00 15.00 sc P13 [24 0 0 -24 142.53 122.87] PATmp PATsp ef gr PATusp gs col15 s gr 
+/Bookman-Demi ff 270.00 scf sf
+3780 3465 m
+gs 1 -1 sc (PSLib is cool!) col0 sh gr
+% here ends figure;
+$F2psEnd
+rs
+end
+showpage
+grestore % end level 2
+grestore % end level 1
+gsave % start level 1
+50.00 225.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 8.000000 scalefont setfont
+10.00 10.00 a
+(This)p 2.23 w (is)p 2.23 w (te)p -0.23 w (xt)p 2.23 w (in)p 2.23 w (8.0)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 23.00 a
+(and)p 3.34 w (in)p 3.34 w (12.0)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 18.000000 scalefont setfont
+10.00 40.00 a
+(in)p 5.01 w (18.0)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 36.000000 scalefont setfont
+10.00 65.00 a
+(huge)p 
+grestore % end level 1
+gsave % start level 1
+180.00 225.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (outlined)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 36.000000 scalefont setfont
+10.00 15.00 a
+(huge)qs 
+0.500000 setlinewidth
+10.00 55.00 a
+(huge)qs 
+grestore % end level 1
+gsave % start level 1
+310.00 225.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (clipping)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 70.000000 scalefont setfont
+10.00 15.00 a
+(82)qsc 
+gsave
+75.00 91.50 scale
+/readstring { currentfile exch readhexstring pop } bind def
+/rpicstr 50 string def
+/gpicstr 50 string def
+/bpicstr 50 string def
+50 61 8
+[50 0 0 -61 -6.666667 61.666668]
+{ rpicstr readstring }
+{ gpicstr readstring }
+{ bpicstr readstring }
+true 3
+colorimage
+fffffffffffffffffffffffffffffffffffffffbeaede3e0ffdce3f1fbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffef9faf7f70ff607fbfefffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffff2b3c09a8eff829acdf2ffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffff8e0cbc7c7c7c7c7cbd2d5d5cbdcedfbffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffdf70100000000000103040401060afefffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffe68e433636363636435c68684382c0f2ffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffff1d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7dcf8ffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffbf500000000000000000000000000000000060dfffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffcd753636363636363636363636363636363682e6ffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffff8d9c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d5cbcbf1ffffffffffffffffffffff
+ffffffffffffffffffffffffffdf500000000000000000000000000000000000000000401010bfffffffffffffffffffffff
+ffffffffffffffffffffffffffe6753636363636363636363636363636363636363636684343cdffffffffffffffffffffff
+ffffffffffffffffffffffffe6cbc7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7d2f1ffffffffffffffffff
+ffffffffffffffffffffffff8f100000000000000000000000000000000000000000000000000030bfffffffffffffffffff
+ffffffffffffffffffffffffa743363636363636363636363636363636363636363636363636365ccdffffffffffffffffff
+fffffffffffffffffffff4cec7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7e3ffffffffffffffff
+ffffffffffffffffffffcf2000000000000000000000000000000000000000000000000000000000007fffffffffffffffff
+ffffffffffffffffffffd94f36363636363636363636363636363636363636363636363636363636369affffffffffffffff
+ffffffffffffffffffeac7c7c7c7c7c7c7c7c7c7c7d9d5e0edf1f1f1f1ede3d5c7c7c7c7c7c7c7c7c7c7dcfbffffffffffff
+ffffffffffffffffff9f0000000000000000000000504070afbfbfbfbfaf7f400000000000000000000060efffffffffffff
+ffffffffffffffffffb3363636363636363636363675688ec0cdcdcdcdc09a683636363636363636363682f2ffffffffffff
+ffffffffffffffffeac7c7c7c7c7c7c7c7c7c7d5f4fffffffffffffffffffffffbeacec7c7c7c7c7c7c7c7d2fbffffffffff
+ffffffffffffffff9f0000000000000000000040cfffffffffffffffffffffffef9f20000000000000000030efffffffffff
+ffffffffffffffffb33636363636363636363668d9fffffffffffffffffffffff2b34f36363636363636365cf2ffffffffff
+ffffffffffffffeac7c7c7c7c7c7c7c7c7c7dcffffffffffffffffffffffffffffffffe3c7c7c7c7c7c7c7c7dcffffffffff
+ffffffffffffff9f0000000000000000000060ffffffffffffffffffffffffffffffff7f000000000000000060ffffffffff
+ffffffffffffffb33636363636363636363682ffffffffffffffffffffffffffffffff9a363636363636363682ffffffffff
+ffffffffffffedc7c7c7c7c7c7c7c7e3fbfffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7e3ffffffff
+ffffffffffffaf00000000000000007fefffffffffffffffffffffffffffffffffffffffcf10000000000000007fffffffff
+ffffffffffffc036363636363636369af2ffffffffffffffffffffffffffffffffffffffd943363636363636369affffffff
+ffffffffffffcbc7c7c7c7c7c7c7e6fffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7c7f1ffffff
+ffffffffffff10000000000000008fffffffffffffffffffffffffffffffffffffffffffffcf1000000000000000bfffffff
+ffffffffffff4336363636363636a7ffffffffffffffffffffffffffffffffffffffffffffd94336363636363636cdffffff
+ffffffffffdcc7c7c7c7c7c7d5eafbfffffffffffffffffffffffffffffffffffffffffffffff4cbc7c7c7c7c7c7ceffffff
+ffffffffff60000000000000409fefffffffffffffffffffffffffffffffffffffffffffffffcf1000000000000020ffffff
+ffffffffff8236363636363668b3f2ffffffffffffffffffffffffffffffffffffffffffffffd9433636363636364fffffff
+fffffffff8c7c7c7c7c7c7e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffedc7c7c7c7c7c7c7eaffff
+ffffffffdf0000000000008fffffffffffffffffffffffffffffffffffffffffffffffffffffffaf000000000000009fffff
+ffffffffe6363636363636a7ffffffffffffffffffffffffffffffffffffffffffffffffffffffc036363636363636b3ffff
+ffe3f1ffe3c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0c7c7c7c7c7c7ceffff
+ff7fbfff7f0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7000000000000020ffff
+ff9acdff9a3636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8e3636363636364fffff
+ffeafff1cbc7c7c7cbf4fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbcbc7c7c7c7cbcbf4ff
+ff9fffbf1000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffef10000000001010cfff
+ffb3ffcd4336363643d9fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff243363636364343d9ff
+fffff8c7c7c7c7cbf4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe3c7c7c7dcfbcbf8ff
+ffffdf0000000010cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f00000060ef10dfff
+ffffe63636363643d9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff9a36363682f243e6ff
+ffffdcc7c7c7c7f1fffffffffffffffffffffffffffffffffffff4f1f1f1fffffffffffffffffffffffbcbc7c7cbe3e3fbff
+ffff6000000000bfffffffffffffffffffffffffffffffffffffcfbfbfbfffffffffffffffffffffffef100000107f7fefff
+ffff8236363636cdffffffffffffffffffffffffffffffffffffd9cdcdcdfffffffffffffffffffffff2433636439a9af2ff
+f1fbcbc7c7c7e6fffffffffffffffffffffffffffffffffbe3cbc7c7c7c7c7dcf8ffffffffffffffffffdcc7c7c7d2f8eaff
+bfef100000008fffffffffffffffffffffffffffffffffef7f10000000000060dfffffffffffffffffff6000000030df9fff
+cdf243363636a7fffffffffffffffffffffffffffffffff29a43363636363682e6ffffffffffffffffff823636365ce6b3ff
+e3eac7c7c7c7f1fffffffffffffffffffffffffffffff4cbc7cbdcedf1f4f1e3ceeaffffffffffffffffeac7c7c7c7fbe3ff
+7f9f00000000bfffffffffffffffffffffffffffffffcf10001060afbfcfbf7f209fffffffffffffffff9f00000000ef7fff
+9ab336363636cdffffffffffffffffffffffffffffffd943364382c0cdd9cd9a4fb3ffffffffffffffffb336363636f29aff
+edd2c7c7c7cbfbfffffffffffffffffffffffffffff4cbc7e3fbffffffffffffffeaedfffffffffffffff1c7c7c7cbf1eaff
+af3000000010efffffffffffffffffffffffffffffcf10007fefffffffffffffff9fafffffffffffffffbf00000010bf9fff
+c05c36363643f2ffffffffffffffffffffffffffffd943369af2ffffffffffffffb3c0ffffffffffffffcd36363643cdb3ff
+f8c7c7c7c7e3fffffffffffffffffffffffffffffbcecbf1fffffffffffffffffffff8ffffffffffffffffc7c7c7cbfbf4ff
+df000000007fffffffffffffffffffffffffffffef2010bfffffffffffffffffffffdfffffffffffffffff00000010efcfff
+e6363636369afffffffffffffffffffffffffffff24f43cdffffffffffffffffffffe6ffffffffffffffff36363643f2d9ff
+eac7c7c7ceffffffffffffffffffffffffffffffd5c7edffffffffffffffffffffffffffffffffffffffffc7c7c7c7f8ffff
+9f00000020ffffffffffffffffffffffffffffff4000afffffffffffffffffffffffffffffffffffffffff00000000dfffff
+b33636364fffffffffffffffffffffffffffffff6836c0ffffffffffffffffffffffffffffffffffffffff36363636e6ffff
+d9c7c7c7e6ffffffffffffffffffffffffffffedc7dcffffffffffffffffffffffffffffffffffffffffffd2c7c7c7f8ffff
+500000008fffffffffffffffffffffffffffffaf0060ffffffffffffffffffffffffffffffffffffffffff30000000dfffff
+75363636a7ffffffffffffffffffffffffffffc03682ffffffffffffffffffffffffffffffffffffffffff5c363636e6ffff
+dcc7c7c7f1ffffffffffffffffffffffffffffdcc7f8ffffffffffffffffffffffffffffffffffffffffffd5c7c7c7d5ffff
+60000000bfffffffffffffffffffffffffffff6000dfffffffffffffffffffffffffffffffffffffffffff4000000040ffff
+82363636cdffffffffffffffffffffffffffff8236e6ffffffffffffffffffffffffffffffffffffffffff6836363668ffff
+e3c7c7c7fbfffffffffffffffffffffffffffbc7d9ffffffffffffffffffffffffffffffe6ffffffffffffd5c7c7c7e6ffff
+7f000000efffffffffffffffffffffffffffef0050ffffffffffffffffffffffffffffff8fffffffffffff400000008fffff
+9a363636f2fffffffffffffffffffffffffff23675ffffffffffffffffffffffffffffffa7ffffffffffff68363636a7ffff
+e3c7c7c7ffffffffffffffffffffffffffffe3c7e3ffffffffffffffffffffffffffffffe0ffffffffffffc7c7c7c7f8ffff
+7f000000ffffffffffffffffffffffffffff7f007fffffffffffffffffffffffffffffff70ffffffffffff00000000dfffff
+9a363636ffffffffffffffffffffffffffff9a369affffffffffffffffffffffffffffff8effffffffffff36363636e6ffff
+e3c7c7ceffffffffffffffffffffffffffffe3c7edfffffffffffffffffffffffffffffffffffffffffffbc7c7c7ceffffff
+7f000020ffffffffffffffffffffffffffff7f00afffffffffffffffffffffffffffffffffffffffffffef00000020ffffff
+9a36364fffffffffffffffffffffffffffff9a36c0fffffffffffffffffffffffffffffffffffffffffff23636364fffffff
+d9c7c7d5ffffffffffffffffffffffffffffe3c7dcfffffffffffffffffffffffffffffffffffffffffff8cbc7c7e0f1ffff
+50000040ffffffffffffffffffffffffffff7f0060ffffffffffffffffffffffffffffffffffffffffffdf10000070bfffff
+75363668ffffffffffffffffffffffffffff9a3682ffffffffffffffffffffffffffffffffffffffffffe64336368ecdffff
+d5c7c7d5ffffffffffffffffffffffffffffe3c7d5fffffffffffffffffffffffffff8e3fffffffffffff8c7c7c7eaedffff
+40000040ffffffffffffffffffffffffffff7f0040ffffffffffffffffffffffffffdf7fffffffffffffdf0000009fafffff
+68363668ffffffffffffffffffffffffffff9a3668ffffffffffffffffffffffffffe69affffffffffffe6363636b3c0ffff
+e0c7c7e0ffffffffffffffffffffffffffffe6c7ceffffffffffffffffffffffffffe0e3ffffffffffffe0c7c7dcf8eaffff
+70000070ffffffffffffffffffffffffffff8f0020ffffffffffffffffffffffffff707fffffffffffff70000060df9fffff
+8e36368effffffffffffffffffffffffffffa7364fffffffffffffffffffffffffff8e9affffffffffff8e363682e6b3ffff
+e0c7c7e3fffffffffffffffffffffffffffff4c7c7f4ffffffffffffffffffffffffd2f4ffffffffffe6cbc7c7f8edf8ffff
+7000007fffffffffffffffffffffffffffffcf0000cfffffffffffffffffffffffff30cfffffffffff8f100000dfafdfffff
+8e36369affffffffffffffffffffffffffffd93636d9ffffffffffffffffffffffff5cd9ffffffffffa7433636e6c0e6ffff
+d5c7c7e3ffffffffffffffffffffffffffffffcec7dcffffffffffffffffffffffffffffffffffffffc7c7c7d9ffe6ffffff
+4000007fffffffffffffffffffffffffffffff200060ffffffffffffffffffffffffffffffffffffff00000050ff8fffffff
+6836369affffffffffffffffffffffffffffff4f3682ffffffffffffffffffffffffffffffffffffff36363675ffa7ffffff
+e3c7c7d5ffffffffffffffffffffffffffffffcec7c7f4fffffffffffbd5d2dcfffffffffffffffff4c7c7e0edfbedffffff
+7f000040ffffffffffffffffffffffffffffff200000cfffffffffffef403060ffffffffffffffffcf000070afefafffffff
+9a363668ffffffffffffffffffffffffffffff4f3636d9fffffffffff2685c82ffffffffffffffffd936368ec0f2c0ffffff
+e3c7c7cefffffffffffffffffffffffffffff1e0d2c7d2fbfffffffffffffffffffffffffffffff4cbc7c7f4fff1ffffffff
+7f000020ffffffffffffffffffffffffffffbf70300030efffffffffffffffffffffffffffffffcf100000cfffbfffffffff
+9a36364fffffffffffffffffffffffffffffcd8e5c365cf2ffffffffffffffffffffffffffffffd9433636d9ffcdffffffff
+e3c7c7c7eaffffffffffffffffffffffffffd2ededcbc7dcffffffffffffffffffffffffffffeac7c7c7d5fbffffffffffff
+7f0000009fffffffffffffffffffffffffff30afaf100060ffffffffffffffffffffffffffff9f00000040efffffffffffff
+9a363636b3ffffffffffffffffffffffffff5cc0c0433682ffffffffffffffffffffffffffffb336363668f2ffffffffffff
+f1c7c7c7f1fffffffffffffffffffffffffff1d9e0edcbc7d2f8ffffffffffffffffffffeacec7c7cbeaffffffffffffffff
+bf000000bfffffffffffffffffffffffffffbf5070af100030dfffffffffffffffffffff9f200000109fffffffffffffffff
+cd363636cdffffffffffffffffffffffffffcd758ec043365ce6ffffffffffffffffffffb34f363643b3ffffffffffffffff
+f4c7c7c7e3ffffffffffffffffffffffffffffe0e3cbeacbc7cbe3fbfffffffffffff8dcc7c7c7cef4ffffffffffffffffff
+cf0000007fffffffffffffffffffffffffffff707f109f1000107fefffffffffffffdf6000000020cfffffffffffffffffff
+d93636369affffffffffffffffffffffffffff8e9a43b34336439af2ffffffffffffe6823636364fd9ffffffffffffffffff
+ffcbc7c7d2ffffffffffffffffffffffffffffffffeacbe0d2c7c7c7d9e3e6e3dccbc7c7c7c7e0fbffffffffffffffffffff
+ff10000030ffffffffffffffffffffffffffffffff9f107030000000507f8f7f60100000000070efffffffffffffffffffff
+ff4336365cffffffffffffffffffffffffffffffffb3438e5c363636759aa79a8243363636368ef2ffffffffffffffffffff
+ffd9c7c7cbfbfffffffffffffffffffffffffffffffff4d2d5cbcbc7c7c7c7c7c7c7c7cbdcf8ffffffffffffffffffffffff
+ff50000010efffffffffffffffffffffffffffffffffcf3040101000000000000000001060dfffffffffffffffffffffffff
+ff75363643f2ffffffffffffffffffffffffffffffffd95c68434336363636363636364382e6ffffffffffffffffffffffff
+ffe6c7c7c7e3ffffffffffffffffffffffffffffffffffffeaced9eaeae3e3e3e3e6f1ffffffffffffffffffffffffffffff
+ff8f0000007fffffffffffffffffffffffffffffffffffff9f20509f9f7f7f7f7f8fbfffffffffffffffffffffffffffffff
+ffa73636369affffffffffffffffffffffffffffffffffffb34f75b3b39a9a9a9aa7cdffffffffffffffffffffffffffffff
+fff8c7c7c7c7cbedffffffffffffffffffffffffffffffffffffeddcd5d5d9e3edffffffffffffffffffffffffffffffffff
+ffdf0000000010afffffffffffffffffffffffffffffffffffffaf604040507fafffffffffffffffffffffffffffffffffff
+ffe63636363643c0ffffffffffffffffffffffffffffffffffffc0826868759ac0ffffffffffffffffffffffffffffffffff
+ffffd5c7c7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff400000000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff683636363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffeac7c7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff9f00000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffb33636363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffcec7c7c7cbf8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff2000000010dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff4f36363643e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffe3c7c7c7c7e0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff7f0000000070ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffff9a363636368effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffbcec7c7c7ceffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffef2000000020ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffff24f3636364fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffeac7c7c7c7eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffff9f000000009fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffb336363636b3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffd5c7c7c7d5ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff4000000040ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffff6836363668ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffff8cbc7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffdf10000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffe643363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffeac7c7c7cbfbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffff9f00000010efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffb336363643f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffdcc7c7c7d2f4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff6000000030cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffff823636365cd9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffbd2c7c7c7dcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffef3000000060ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffff25c36363682ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffbd2c7c7c7f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffef30000000bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffff25c363636cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffbd2c7c7cbd9fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffef3000001050efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffff25c36364375f2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffbd2c7c7c7d2fbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffef3000000030efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffff25c3636365cf2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffbdcc7c7c7cefbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffef6000000020efffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffff2823636364ff2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffe6c7c7c7d5f8f8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffff8f00000040dfdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffa736363668e6e6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff4d5c7c7cbceeaffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffcf40000010209fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffd9683636434fb3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffeacec7c7c7edffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff9f20000000afffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffb34f363636c0ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffead5c7c7dcf4ffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffff9f40000060cfffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffb368363682d9ffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffff8e6d5cbced5e3edfbffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffdf8f401020407fafefffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffe6a768434f689ac0f2ffffffffffffffffffffffffffffffffffffffffff
+
+grestore
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 20.000000 scalefont setfont
+/DeviceGray setcolorspace 0.500000 setcolor
+10.00 80.00 a
+(Stripes)qfsc 
+/DeviceGray setcolorspace 0.000000 setcolor
+10.00 75.00 a
+80.00 75.00 l
+stroke
+10.00 77.00 a
+80.00 77.00 l
+stroke
+10.00 79.00 a
+80.00 79.00 l
+stroke
+10.00 81.00 a
+80.00 81.00 l
+stroke
+10.00 83.00 a
+80.00 83.00 l
+stroke
+10.00 85.00 a
+80.00 85.00 l
+stroke
+10.00 87.00 a
+80.00 87.00 l
+stroke
+10.00 89.00 a
+80.00 89.00 l
+stroke
+10.00 91.00 a
+80.00 91.00 l
+stroke
+10.00 93.00 a
+80.00 93.00 l
+stroke
+10.00 95.00 a
+80.00 95.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+440.00 225.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(in)p -0.23 w (visib)p -0.23 w (le)p 3.34 w -0.59 w (T)p -1.44 w (e)p -0.35 w (xt)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 10.000000 scalefont setfont
+5.00 15.00 a
+(This)p 2.78 w (is)p 2.78 w 
+36.67 15.00 a
+(in)qi -0.20 w (visib)qi -0.20 w (le)qi 
+71.83 15.00 a
+2.78 w (te)p -0.29 w (xt.)p 
+5.00 35.00 a
+(This)p 2.78 w (is)p 2.78 w 
+36.67 35.00 a
+(in)p -0.20 w (visib)p -0.20 w (le)p 
+71.83 35.00 a
+2.78 w (te)p -0.29 w (xt.)p 
+grestore % end level 1
+gsave % start level 1
+50.00 75.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (in)p 3.34 w (a)p 3.34 w (bo)p -0.35 w (x)p 3.34 w (\501\51)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 8.000000 scalefont setfont
+10.00 84.26 a
+(T)p -0.95 w (e)p -0.23 w (xt)p 2.23 w (can)p 2.23 w (be)p 2.23 w (put)p 2.23 w (into)p 2.23 w (a)p 
+10.00 73.26 a
+(bo)p -0.23 w (x)p 2.23 w (of)p 2.23 w (an)p -0.11 w (y)p 2.23 w (siz)p -0.11 w (e)p -0.11 w (.)p 1.75 w -0.40 w (This)p 
+10.00 62.26 a
+(one)p 2.23 w (is)p 2.23 w (80x80)p 2.23 w (pix)p -0.23 w (els)p 
+10.00 51.26 a
+(and)p 2.23 w (its)p 2.23 w (lo)p -0.11 w (w)p -0.07 w (er)p 2.23 w (left)p 
+10.00 40.26 a
+(cor)p 0.21 w (ner)p 2.23 w (ist)p 2.23 w (at)p 2.23 w (\5010,)p 2.23 w (10\51.)p 
+10.00 29.26 a
+(The)p 2.23 w (te)p -0.23 w (xt)p 2.23 w (is)p 2.23 w (left)p 
+10.00 18.26 a
+(justi\2ed.)p 1.75 w -0.40 w (The)p 2.23 w (f)p -0.23 w (ont)p 2.23 w (siz)p -0.11 w (e)p 
+grestore % end level 1
+gsave % start level 1
+180.00 75.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (in)p 3.34 w (a)p 3.34 w (bo)p -0.35 w (x)p 3.34 w (\502\51)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 8.000000 scalefont setfont
+9.76 84.26 a
+(T)p -0.95 w (e)p -0.23 w (xt)p 3.12 w (can)p 3.12 w (be)p 3.12 w (put)p 3.12 w (into)p 3.12 w (a)p 
+10.00 73.26 a
+(bo)p -0.23 w (x)p 4.37 w (of)p 4.37 w (an)p -0.11 w (y)p 4.37 w (siz)p -0.11 w (e)p -0.11 w (.)p 3.88 w -0.40 w (This)p 
+10.00 62.26 a
+(one)p 6.29 w (is)p 6.29 w (80x80)p 6.29 w (pix)p -0.23 w (els)p 
+10.00 51.26 a
+(and)p 9.73 w (its)p 9.73 w (lo)p -0.11 w (w)p -0.07 w (er)p 9.73 w (left)p 
+10.00 40.26 a
+(cor)p 0.21 w (ner)p 4.08 w (ist)p 4.08 w (at)p 4.08 w (\5010,)p 4.08 w (10\51.)p 
+9.76 29.26 a
+(The)p 6.00 w (te)p -0.23 w (xt)p 6.00 w (is)p 6.00 w (left)p 6.00 w (and)p 
+10.00 18.26 a
+(r)p 0.12 w (ight)p 3.03 w (justi\2ed.)p 2.55 w -0.40 w (The)p 3.03 w (f)p -0.23 w (ont)p 
+grestore % end level 1
+gsave % start level 1
+310.00 75.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (in)p 3.34 w (a)p 3.34 w (bo)p -0.35 w (x)p 3.34 w (\503\51)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 8.000000 scalefont setfont
+14.26 84.26 a
+(T)p -0.95 w (e)p -0.23 w (xt)p 2.23 w (can)p 2.23 w (be)p 2.23 w (put)p 2.23 w (into)p 2.23 w (a)p 
+18.56 73.26 a
+(bo)p -0.23 w (x)p 2.23 w (of)p 2.23 w (an)p -0.11 w (y)p 2.23 w (siz)p -0.11 w (e)p -0.11 w (.)p 1.75 w -0.40 w (This)p 
+22.21 62.26 a
+(one)p 2.23 w (is)p 2.23 w (80x80)p 2.23 w (pix)p -0.23 w (els)p 
+32.40 51.26 a
+(and)p 2.23 w (its)p 2.23 w (lo)p -0.11 w (w)p -0.07 w (er)p 2.23 w (left)p 
+15.99 40.26 a
+(cor)p 0.21 w (ner)p 2.23 w (ist)p 2.23 w (at)p 2.23 w (\5010,)p 2.23 w (10\51.)p 
+35.43 29.26 a
+(The)p 2.23 w (te)p -0.23 w (xt)p 2.23 w (is)p 2.23 w (r)p 0.12 w (ight)p 
+13.87 18.26 a
+(justi\2ed.)p 1.75 w -0.40 w (The)p 2.23 w (f)p -0.23 w (ont)p 2.23 w (siz)p -0.11 w (e)p 
+grestore % end level 1
+end
+restore
+showpage
+
+%%Page: 2 2
+%%PageBoundingBox: 0 0 596 842
+save
+TeXDict begin
+[ /CropBox [0 0 596.00 842.00] /PAGE pdfmark
+gsave % start level 1
+50.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 10.000000 scalefont setfont
+5.00 75.00 a
+(No)p 2.78 w (lines)p 2.78 w (at)p 2.78 w (all)p 
+5.00 60.00 a
+(T)p -1.20 w (e)p -0.29 w (xt)p 2.78 w (is)p 2.78 w (under)p 0.15 w (lined)p 
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 58.00 a
+82.57 58.00 l
+stroke
+grestore % end level 2
+5.00 45.00 a
+(T)p -1.20 w (e)p -0.29 w (xt)p 2.78 w (is)p 2.78 w (o)p -0.14 w (v)p -0.24 w (er)p 0.15 w (lined)p 
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 53.00 a
+76.05 53.00 l
+stroke
+grestore % end level 2
+5.00 30.00 a
+(T)p -1.20 w (e)p -0.29 w (xt)p 2.78 w (is)p 2.78 w (str)p 0.15 w (ik)p -0.20 w (ed)p 2.78 w (out)p 
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 33.00 a
+81.81 33.00 l
+stroke
+grestore % end level 2
+5.00 15.00 a
+(Ev)p -0.24 w (er)p 0.30 w (ything)p 2.78 w (at)p 2.78 w (once)p 
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 11.00 a
+87.87 11.00 l
+stroke
+grestore % end level 2
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 23.00 a
+87.87 23.00 l
+stroke
+grestore % end level 2
+gsave % start level 2
+[] 0 setdash
+0.500000 setlinewidth
+5.00 18.00 a
+87.87 18.00 l
+stroke
+grestore % end level 2
+grestore % end level 1
+gsave % start level 1
+180.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (width)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+10.00 50.00 a
+(Geometr)p 0.42 w (y)p 
+10.00 45.00 a
+71.88 45.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 6.000000 scalefont setfont
+10.00 35.00 a
+(T)p -0.71 w (e)p -0.17 w (xt)p 1.67 w (is)p 1.67 w (61.88)p 1.67 w (pix)p -0.17 w (el)p 1.67 w (wide)p -0.08 w (.)p 
+grestore % end level 1
+gsave % start level 1
+310.00 675.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (geometr)p 0.36 w (y)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+10.00 50.00 a
+(Geometr)p 0.42 w (y)p 
+0.400000 setlinewidth
+10.00 50.00 a
+71.88 50.00 l
+stroke
+10.00 47.00 a
+71.88 47.00 l
+stroke
+10.00 60.32 a
+71.88 60.32 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 6.000000 scalefont setfont
+10.00 35.00 a
+(T)p -0.71 w (e)p -0.17 w (xt)p 1.67 w (is)p 1.67 w (61.88)p 1.67 w (pix)p -0.17 w (el)p 1.67 w (wide)p -0.08 w (.)p 
+10.00 27.00 a
+(Ascender)p 1.67 w (is)p 1.67 w (10.32)p 1.67 w (pix)p -0.17 w (el.)p 
+10.00 19.00 a
+(Descender)p 1.67 w (is)p 1.67 w (-3.00)p 1.67 w (pix)p -0.17 w (el.)p 
+grestore % end level 1
+gsave % start level 1
+50.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(T)p -1.44 w (e)p -0.35 w (xt)p 3.34 w (k)p -0.23 w (er)p 0.30 w (ning)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+10.00 70.00 a
+(T)p -1.68 w (ea)p 3.90 w -0.69 w (V)p -1.12 w (A)p 3.90 w (lif)p -0.41 w (e)p 
+10.00 65.00 a
+74.55 65.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 6.000000 scalefont setfont
+10.00 55.00 a
+(T)p -0.71 w (e)p -0.17 w (xt)p 1.67 w (is)p 1.67 w (64.55)p 1.67 w (pix)p -0.17 w (el)p 1.67 w (wide)p -0.08 w (.)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+10.00 40.00 a
+(Tea)p 3.90 w (VA)p 3.90 w (life)p 
+10.00 35.00 a
+78.47 35.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 6.000000 scalefont setfont
+10.00 25.00 a
+(Text)p 1.67 w (is)p 1.67 w (68.47)p 1.67 w (pixel)p 1.67 w (wide.)p 
+grestore % end level 1
+gsave % start level 1
+180.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Embedded)p 3.34 w (font)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+%BeginFont: dice
+%!PS-AdobeFont-1.0: Dice 001.000
+%%Title: Dice
+%%CreationDate: Thu Dec 19 10:08:23 2002
+%%Creator: Uwe Steinmann,,,
+%%DocumentSuppliedResources: font Dice
+% Created by Uwe Steinmann with PfaEdit 1.0 (http://pfaedit.sf.net)
+% 2002-12-19: Created.
+% Generated by PfaEdit 1.0 (http://pfaedit.sf.net/)
+%%EndComments
+FontDirectory/Dice known{/Dice findfont dup/UniqueID known{dup
+/UniqueID get 4151446 eq exch/FontType get 1 eq and}{pop false}ifelse
+{save true}{false}ifelse}{false}ifelse
+11 dict begin
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0 ]readonly def
+/FontName /Dice def
+/FontBBox [100 50 700 650 ]readonly def
+/UniqueID 4151446 def
+/PaintType 0 def
+/FontInfo 10 dict dup begin
+ /version (001.000) readonly def
+ /Notice (Created by Uwe Steinmann with PfaEdit 1.0 \050http://pfaedit.sf.net\051) readonly def
+ /FullName (Dice) readonly def
+ /FamilyName (Dice) readonly def
+ /Weight (Medium) readonly def
+ /FSType 12 def
+ /ItalicAngle 0 def
+ /isFixedPitch true def
+ /UnderlinePosition -100 def
+ /UnderlineThickness 50 def
+end readonly def
+/Encoding 256 array
+ 0 1 255 { 1 index exch /.notdef put} for
+dup 49/one put
+dup 50/two put
+dup 51/three put
+dup 52/four put
+dup 53/five put
+dup 54/six put
+readonly def
+currentdict end
+currentfile eexec
+6f34853ea314f689e00287c3ac6030989a0247917d264d775d057d96cfe3f232bb3fdc90df
+96fc5740e2c99c1d1673b176ad76cf99598dbe5a8c5161f070a2ac7a00bff42a275f552562
+a2722b10dd662443036991317a23bf76301960e56da5d0fe05cef4a36dee6a38c2fbd89277
+4c84f68a8eeff3ff4a0a13c749c96c3a1f9ef2726327fa5cea6ddc583d11e7d0b6cdd87148
+2271c1139947fa5a83d6477019313580bd5479d6a873f0d1855436f4310df2c91d64dc002c
+a909e0bda0b59d13ff9e4c876a44c5454a1e2dfcca8ae3727c8b2d3871b847322a538df962
+40da961de721bbbf766d3c66c6b2ba709e5e2e129dd48c3c52c1710460f3c283d7f291d954
+b6c4a214e92fbf3658a9f12bf905e6a9aa159bf020e543541f093e7b384b5fa8cd02071e7e
+e9997a6609257fa07d4ac53dfa51630379c34bb98effe1a6754115924d81c24f6b4ec5d16c
+615581e9d3b6457fad18b2f339c6d01a22c8c29216e612cda349576730679a97144aedbf5d
+f8b69e66adbfdbda4737737f51eb7a38a4207bb46456a8117067748659d654b1d14849f149
+20e57462ecff602a181700a346c1e95131c8531fe899871e20abe3e29edc0d2e88f5bab0bd
+0d53c4e71c4b63987c3db227f6382476098898e13a03c4ee2734630cb997c348e97117717d
+37c296739e129ba168693d5f65a8514844f69df8df0c7b36be19795dea39b2742cd4afa9d3
+edfc5c81911a7df73b9483ba862ddbff148ccce4479ae88f864c81b8279fdb649ea4952ffd
+b6d8c8b02cb75ed8faf19eeaf23908149083e8df2fe56a2403e393cc71107fe8f80dde4a67
+088ff092d50e9257cfac3595db7faf06ff03f6f86e6d219d878e5a62ac090da2785504fa90
+2499b61fd903eab7a2f389b6922ffb39c49e235ca45db12676979a14c4311000091e526178
+29756dba4cef3f25e20ee996c2125207cb2363c7e903fc119de0594031848926e42652fed4
+d73843dceb3fe726dbb9179dc0bf89477272f3575a57b2048b8ce42ec5a3df5ad45a888660
+49379032547de5e45e70a2e63283ec1655aa6bd20d92299e6d6ff277c3a9288f18c426f6f8
+10e17ea834537bc26bc1771eddb9b003555b4ac739b5d1d058e49396756f0b6dead23e04f4
+867f62edd400a0e44f776857f44ebf6b7dca1f69a6c496a8ea95098471ad59900c4c3c0c9c
+8419b778b7581b53837b4adeb638ac1abb0a1073bc8d7dbfe6f1ccdf24c5edd4020080e968
+3ecde804e7f3b9e564f8cbefc54cf0ea965dab0e1cbcaa0d9af7bde083403e82d1d759a783
+534ad92e3234268cee75fda07ee775022c377b939adb091ef30fb654f4e682d4783de81ba8
+862bcddf079fd863398e65ca536bf6f757022c6c113fe910c6e1764847a317ab851ee7a932
+e35160d6d478608817b5150d5bac87202da29b5de2564728e16cd7f4f018e225c57d5be656
+a0725f6976a66e8815065f21229adb9231bf03ee90cff6a80ae4c3ad16d7cc89c50fa1bc35
+ae065b5ad258666ec0aab23011b925950f80042c387f0969f7eabd051e068bd02369d4a2b3
+52f5cfd4270b560a653bd3064e062b442c73b6b7c92b7baf662708dfca50be28d5367c2cf3
+f19171d08084679a8b65d30dd071c427cd4d67ee024a40306b1a1d03158c6d9b59e7625b37
+4d3eb69d051d056df20cbf99163927cc7e700277b753445277c807cfa3e2830f661b08c0f7
+f29b3b7d591cd8ca2b6f87599e998772604ce101e4a33dc26ed85be9ef7c051df6bcdc6a44
+54e07567a953e2ba5ea934f5c1654b267dfe8b41721104ce2ca4d1597fe4bd5c8b7bec639e
+faa692fbf693221165184a536459ccd4e0a3b3c95b7543b2b603470858b3b69a30c2519a65
+1c2421b4e17d708455c8147b3f2b75a40a4df7c0764726d45fb573a16ad9344c1947a6b52d
+61b5dab9b54a2d3e2c297f8a66b22b0b76ee3557f40e6100d00f8dac39fc8135c2dcc73d0a
+e67e8b952947643d2c3855a73eceb88fd1514f7aa766827e2d8a3f42bf5b521c1fa1ff4109
+5ca419d7c78372b08101cba1b4cc467b0802c8b10e4e2e77b8df4d09cbba5805abbbc4656a
+a9c06bd6a10f42778438dc3308d4aa16b131b4d9e35743a46c219afd17328655d47e4e6f12
+fb8e5627bc2e5a746f26f178db6168ca65360a45691ca17c893114676793c0d5a66e55bc61
+de36e3f074a4d5e186dee74ff8a8db476900eb6d8dbe223e97944606286395ab44d992ae23
+a80535c18b563ef78d6edb4e57c8a83eff61b3f3815da5d6d2daf6cb745da1e2a76436d880
+8b346c4953446bb4bd6ef14445cc28d5fb2c20a3ef99a422403dd1a0e99aec8b1a9c353fe3
+d76d3ab7635728b209ea608b4823fe924c379de5aefb13dcf0f0d590f10a4b4fda892868a2
+0c9ecac560dd0cab29cad191ca88c4ea8082750618fadcf84b95b26f1efd6056b02cbb7380
+1f64c4caf11fc8ed0802ba07d569e6c5fa72113074d8e44a6d534043993e153600cb38e28e
+ab99a5f1e7ae003a39b8a6b59488ec18b1280138872cdff675967ffe5cd13108691a61b934
+69273cc27a3b87888633bca45d945b151398019e502e7585d82d5da86c248a45d6fde59ae1
+3847846446eabef99d7e516b90f6580263ad58a68ec7eb1172693c082c9668cfd1bd20d374
+e9d902ba534d7633f6353244148e7af834af1a450ccef86053db8cee63d5129f342f5ea871
+68ed432038f1a84d934e2dfc8e484fa02c91332aac8699235124df84b6440e873f1aeaba22
+36e2394bb2f33b2a53c990af038161359151340a941f9ab7c4198ae5ac13fb06d18bf9c254
+63eac822f2c97ac1eef5d65e4bff3d5ce5adf14a15b46c2dceb9c5d0744f666dda53e0a3a5
+126a105b94a2df3689bd019cdca79c90c4e70ac77a158fc3b944af977fb8961cc699d93cdb
+f73866d1b1ac718dfa1e58aabb7c6b192bb80ce199d06b1ae73518e2ef47b341ad9ee74c71
+fd1451533ca7f27348aedb6821c2fdcd215caed311e0dfa571038bc95af36ff34549b9d46f
+243dcbce6420e31204a3c2f99c5151dbaf1ad3c4a2ca2d3412d4bf02238fa163b1ba5d81df
+682ef6c827b40137f24f7b74beed548ccdad9a12840bedbc8c8b92df74f90f1a177429f658
+cb5a7f4e30942bf2cf9643c8f24b6276dd0b5750b6ba31dee04f16cbf41f9943031606f678
+79
+
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+{restore}if
+%EndFont
+/Dice /Dice-TeXBase1 fontenc-TeXBase1 ReEncode
+/Dice-TeXBase1 findfont 10.000000 scalefont setfont
+10.00 70.00 a
+(123456)p 
+/Dice /Dice-TeXBase1 fontenc-TeXBase1 ReEncode
+/Dice-TeXBase1 findfont 14.000000 scalefont setfont
+10.00 50.00 a
+(123456)p 
+/Dice /Dice-TeXBase1 fontenc-TeXBase1 ReEncode
+/Dice-TeXBase1 findfont 18.000000 scalefont setfont
+10.00 24.00 a
+(123456)p 
+grestore % end level 1
+gsave % start level 1
+310.00 525.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Protusion)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 6.000000 scalefont setfont
+10.00 85.69 a
+(If)p 2.92 w (text)p 2.92 w (is)p 2.92 w (output)p 2.92 w (in)p 2.92 w (a)p 2.92 w (box)p 2.92 w (left)p 
+10.00 77.69 a
+(and)p 4.87 w (right)p 4.87 w (justi\2ed)p 4.87 w (then)p 4.87 w (the)p 
+10.00 69.69 a
+(margins)p 4.16 w (can)p 4.16 w (appear)p 4.16 w (bumby)p 
+10.00 61.69 a
+(due)p 2.26 w (to)p 2.26 w (punction)p 2.26 w (and)p 2.26 w (hyphens.)p 
+9.82 53.69 a
+(To)p 1.81 w (prevent)p 1.81 w (this,)p 1.81 w (one)p 1.81 w (can)p 1.81 w (allow)p 
+10.00 45.69 a
+(certain)p 3.37 w (glyphs)p 3.37 w (to)p 3.37 w (exceed)p 3.37 w (the)p 
+10.00 37.69 a
+(margin.)p 2.99 w (Finding)p 2.99 w (the)p 2.99 w (right)p 2.99 w (val\255)p 
+10.00 29.69 a
+(ues)p 4.28 w (can)p 4.28 w (be)p 4.28 w (a)p 4.28 w (painful)p 4.28 w (task.)p 
+10.00 21.69 a
+(Look)p 3.03 w (for)p 3.03 w (the)p 3.03 w (hyphen)p 3.03 w (and)p 3.03 w (the)p 
+10.00 13.69 a
+(exaggerated)p 1.67 w ('e')p 1.67 w (in)p 1.67 w (this)p 1.67 w (text.)p 
+0.200000 setlinewidth
+10.00 10.00 a
+10.00 90.00 l
+stroke
+90.00 10.00 a
+90.00 90.00 l
+stroke
+grestore % end level 1
+gsave % start level 1
+50.00 375.00 translate
+/DeviceGray setcolorspace 0.500000 setcolor
+newpath
+0.000000 100.000000 a
+100.000000 100.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+fill
+/DeviceGray setcolorspace 1.000000 setcolor
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+10.00 105.00 a
+(Text)p 3.34 w (rise)p 
+1.000000 setlinewidth
+/DeviceGray setcolorspace 0.000000 setcolor
+newpath
+0.000000 0.000000 a
+100.000000 0.000000 l
+100.000000 120.000000 l
+0.000000 120.000000 l
+closepath
+stroke
+0.00 100.00 a
+100.00 100.00 l
+stroke
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 18.000000 scalefont setfont
+13.00 60.00 a
+(a)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+23.01 60.00 a
+6.000000 tr (2)p rt 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 18.000000 scalefont setfont
+29.68 60.00 a
+(+b)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+50.20 60.00 a
+6.000000 tr (2)p rt 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 18.000000 scalefont setfont
+56.87 60.00 a
+(=c)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 12.000000 scalefont setfont
+76.38 60.00 a
+6.000000 tr (2)p rt 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+13.00 30.00 a
+(some)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 9.000000 scalefont setfont
+47.23 30.00 a
+6.000000 tr (1\51)p rt 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 14.000000 scalefont setfont
+55.23 30.00 a
+3.90 w (Text)p 
+/Helvetica /Helvetica-TeXBase1 fontenc-TeXBase1 ReEncode
+/Helvetica-TeXBase1 findfont 9.000000 scalefont setfont
+14.00 10.00 a
+(1\51)p 2.51 w (and)p 2.51 w (a)p 2.51 w (footnote)p 
+grestore % end level 1
+end
+restore
+showpage
+%% Pages: 2

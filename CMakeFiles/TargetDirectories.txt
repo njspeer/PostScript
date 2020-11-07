@@ -1,0 +1,3 @@
+/Users/nathan/Documents/PostScript/CMakeFiles/rebuild_cache.dir
+/Users/nathan/Documents/PostScript/CMakeFiles/edit_cache.dir
+/Users/nathan/Documents/PostScript/CMakeFiles/makelabels.dir
